@@ -18,7 +18,6 @@ public class StatManager : MonoBehaviour {
     public int navigationPoints;
     public int shipHealth;
     public int enginePower;
-    public int violence;
     
     //Crew Totals
     public int totalCrew;
@@ -140,20 +139,21 @@ public class StatManager : MonoBehaviour {
         totalCrew = medicAmount + chefAmount + engineerAmount + navigatorAmount + securityAmount;
         navigationPoints = navigatorAmount;
         enginePower = engineerAmount;
-        violence = securityAmount;
         GetComponent<StatsUI>().UpdateUI();
     }
 
     public void NextTurn()
     {
-        CalculateStats();
+        
         //Crew Health
         crewHealth += medicAmount;
         Mathf.Clamp(crewHealth, 0, 100);
         //Crew Nutrition
         crewNutrition -= (totalCrew + passengerAmount);
-        crewNutrition += (chefAmount * 30);        
+        crewNutrition += (chefAmount * 30);
 
+
+        CalculateStats();
     }
 
     public void ReadStats()
