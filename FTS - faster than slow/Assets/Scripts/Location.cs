@@ -6,6 +6,6 @@ using UnityEngine;
 public class Location
 {
     public string name;
-    public string[] fileNames;
+    public TextAsset[] fileNames;
     public float eventChance;
 }
