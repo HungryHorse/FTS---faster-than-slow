@@ -31,10 +31,8 @@ public class StatManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        crewHealth = StartingHealth;
-        crewNutrition = StartingNutrition;
-        shipHealth = StartingShipHealth;
-        UpdateStats();
+        ReadStats();
+        CalculateStats();
 	}
 	
 	// Update is called once per frame
@@ -69,7 +67,7 @@ public class StatManager : MonoBehaviour {
             default:
                 break;
         }
-        UpdateStats();
+        CalculateStats();
     }
 
     public void RemoveCrew(string type, int amount)
@@ -99,10 +97,10 @@ public class StatManager : MonoBehaviour {
             default:
                 break;
         }
-        UpdateStats();
+        CalculateStats();
     }
 
-    public void UpdateStats()
+    public void CalculateStats()
     {
         totalCrew = medicAmount + chefAmount + engineerAmount + navigatorAmount + securityAmount;
         navigationPoints = navigatorAmount;
@@ -120,5 +118,31 @@ public class StatManager : MonoBehaviour {
         crewNutrition += (chefAmount * 3);
         Mathf.Clamp(crewNutrition, 0, 100);
 
+    }
+
+    public void ReadStats()
+    {
+        crewHealth = PlayerPrefs.GetInt("crewHealth");
+        crewNutrition = PlayerPrefs.GetInt("crewNutrition");
+        shipHealth = PlayerPrefs.GetInt("shipHealth");
+
+        medicAmount = PlayerPrefs.GetInt("medicAmount");
+        chefAmount = PlayerPrefs.GetInt("chefAmount");
+        engineerAmount = PlayerPrefs.GetInt("engineerAmount");
+        navigatorAmount = PlayerPrefs.GetInt("navigatorAmount");
+        securityAmount = PlayerPrefs.GetInt("securityAmount");
+    }
+
+    public void WriteStats()
+    {
+        PlayerPrefs.SetInt("crewHealth", crewHealth);
+        PlayerPrefs.SetInt("crewNutrition", crewNutrition);
+        PlayerPrefs.SetInt("shipHealth", shipHealth);
+
+        PlayerPrefs.SetInt("medicAmount", medicAmount);
+        PlayerPrefs.SetInt("chefAmount", chefAmount);
+        PlayerPrefs.SetInt("engineerAmount", engineerAmount);
+        PlayerPrefs.SetInt("navigatorAmount", navigatorAmount);
+        PlayerPrefs.SetInt("securityAmount", securityAmount);
     }
 }
