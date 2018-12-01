@@ -141,6 +141,7 @@ public class StatManager : MonoBehaviour {
         navigationPoints = navigatorAmount;
         enginePower = engineerAmount;
         violence = securityAmount;
+        GetComponent<StatsUI>().UpdateUI();
     }
 
     public void NextTurn()
@@ -187,4 +188,6 @@ public class StatManager : MonoBehaviour {
     {
         AddStat("Security", 2);
     }
+
+
 }
