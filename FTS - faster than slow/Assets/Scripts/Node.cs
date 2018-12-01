@@ -20,4 +20,21 @@ public class Node : MonoBehaviour
             }
         }
     }
+
+    // Update is called once per frame
+    void Update()
+    {
+        for (int i = 0; i < prevNodes.Length; i++)
+        {
+            if (ship.currNode == prevNodes[i])
+            {
+                GetComponent<SpriteRenderer>().color = Color.green;
+                break;
+            }
+            else
+            {
+                GetComponent<SpriteRenderer>().color = Color.white;
+            }
+        }
+    }
 }
