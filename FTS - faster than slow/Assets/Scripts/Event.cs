@@ -17,15 +17,23 @@ public class Event
     Text description;
     Text option1;
     Text option2;
+    Text responseText;
 
     public void SetText()
     {
-
         stats = GameObject.Find("Stats").GetComponent<StatManager>();
 
         description = GameObject.Find("Description").GetComponent<Text>();
         option1 = GameObject.Find("Option1").GetComponent<Text>();
         option2 = GameObject.Find("Option2").GetComponent<Text>();
+        try
+        {
+            responseText = GameObject.Find("Response").GetComponent<Text>();
+            responseText.gameObject.SetActive(false);
+        }
+        catch { }
+
+        
 
         if (text != null)
         {
@@ -44,124 +52,46 @@ public class Event
     {
         if (option1)
         {
-            description.text = Option1();
+            responseText.text = Option1();
         }
         else
         {
-            description.text = Option2();
+            responseText.text = Option2();
         }
     }
 
     public string Option1()
     {
-        Debug.Log(option1Effected);
         response = voiceLines[4];
-        int noOfPass;
         int crewKilled = 0;
-        int passengersKilled = 0;
         switch (option1Effected)
         {
             case "S\r":
-                noOfPass = 0;
-                for(int i = 0; i < stats.securityAmount; i++)
-                {
-                    if (doDCCheck(option1DC))
-                    {
-                        noOfPass++;
-                    }
-                    else
-                    {
-                        crewKilled++;
-                    }
-                    if(noOfPass > 3)
-                    {
-                        break;
-                    }
-                }
+                crewKilled = CalculateCrewLoss(stats.securityAmount, option1DC);
                 stats.RemoveStat("Security", crewKilled);
                 response += " " + crewKilled + " members of your sercurity team died.";
                 break;
 
             case "M\r":
-                noOfPass = 0;
-                for (int i = 0; i < stats.medicAmount; i++)
-                {
-                    if (doDCCheck(option1DC))
-                    {
-                        noOfPass++;
-                    }
-                    else
-                    {
-                        crewKilled++;
-                    }
-                    if (noOfPass > 3)
-                    {
-                        break;
-                    }
-                }
+                crewKilled = CalculateCrewLoss(stats.medicAmount, option1DC);
                 stats.RemoveStat("Medic", crewKilled);
                 response += " " + crewKilled + " members of your medical team died.";
                 break;
 
             case "E\r":
-                noOfPass = 0;
-                for (int i = 0; i < stats.engineerAmount; i++)
-                {
-                    if (doDCCheck(option1DC))
-                    {
-                        noOfPass++;
-                    }
-                    else
-                    {
-                        crewKilled++;
-                    }
-                    if (noOfPass > 3)
-                    {
-                        break;
-                    }
-                }
+                crewKilled = CalculateCrewLoss(stats.engineerAmount, option1DC);
                 stats.RemoveStat("Engineer", crewKilled);
                 response += " " + crewKilled + " members of your engineering team died.";
                 break;
 
             case "C\r":
-                noOfPass = 0;
-                for (int i = 0; i < stats.chefAmount; i++)
-                {
-                    if (doDCCheck(option1DC))
-                    {
-                        noOfPass++;
-                    }
-                    else
-                    {
-                        crewKilled++;
-                    }
-                    if (noOfPass > 3)
-                    {
-                        break;
-                    }
-                }
+                crewKilled = CalculateCrewLoss(stats.chefAmount, option1DC);
                 stats.RemoveStat("Chef", crewKilled);
                 response += " " + crewKilled + " members of your culinary team died.";
                 break;
 
             case "N\r":
-                noOfPass = 0;
-                for (int i = 0; i < stats.navigatorAmount; i++)
-                {
-                    if (doDCCheck(option1DC))
-                    {
-                        noOfPass++;
-                    }
-                    else
-                    {
-                        crewKilled++;
-                    }
-                    if (noOfPass > 3)
-                    {
-                        break;
-                    }
-                }
+                crewKilled = CalculateCrewLoss(stats.navigatorAmount, option1DC);
                 stats.RemoveStat("Navigator", crewKilled);
                 response += " " + crewKilled + " members of your navigation team died.";
                 break;
@@ -195,112 +125,36 @@ public class Event
     public string Option2()
     {
         response = voiceLines[8];
-        int noOfPass;
         int crewKilled = 0;
-        int passengersKilled = 0;
+
         switch (option2Effected)
         {
             case "S\r":
-                noOfPass = 0;
-                for (int i = 0; i < stats.securityAmount; i++)
-                {
-                    if (doDCCheck(option2DC))
-                    {
-                        noOfPass++;
-                    }
-                    else
-                    {
-                        crewKilled++;
-                    }
-                    if (noOfPass > 3)
-                    {
-                        break;
-                    }
-                }
+                crewKilled = CalculateCrewLoss(stats.securityAmount, option2DC);
                 stats.RemoveStat("Security", crewKilled);
                 response += " " + crewKilled + " members of your sercurity team died.";
                 break;
 
             case "M\r":
-                noOfPass = 0;
-                for (int i = 0; i < stats.medicAmount; i++)
-                {
-                    if (doDCCheck(option2DC))
-                    {
-                        noOfPass++;
-                    }
-                    else
-                    {
-                        crewKilled++;
-                    }
-                    if (noOfPass > 3)
-                    {
-                        break;
-                    }
-                }
+                crewKilled = CalculateCrewLoss(stats.medicAmount, option2DC);
                 stats.RemoveStat("Medic", crewKilled);
                 response += " " + crewKilled + " members of your medical team died.";
                 break;
 
             case "E\r":
-                noOfPass = 0;
-                for (int i = 0; i < stats.engineerAmount; i++)
-                {
-                    if (doDCCheck(option2DC))
-                    {
-                        noOfPass++;
-                    }
-                    else
-                    {
-                        crewKilled++;
-                    }
-                    if (noOfPass > 3)
-                    {
-                        break;
-                    }
-                }
+                crewKilled = CalculateCrewLoss(stats.engineerAmount, option2DC);
                 stats.RemoveStat("Engineer", crewKilled);
                 response += " " + crewKilled + " members of your engineering team died.";
                 break;
 
             case "C\r":
-                noOfPass = 0;
-                for (int i = 0; i < stats.chefAmount; i++)
-                {
-                    if (doDCCheck(option2DC))
-                    {
-                        noOfPass++;
-                    }
-                    else
-                    {
-                        crewKilled++;
-                    }
-                    if (noOfPass > 3)
-                    {
-                        break;
-                    }
-                }
+                crewKilled = CalculateCrewLoss(stats.chefAmount, option2DC);
                 stats.RemoveStat("Chef", crewKilled);
                 response += " " + crewKilled + " members of your culinary team died.";
                 break;
 
             case "N\r":
-                noOfPass = 0;
-                for (int i = 0; i < stats.navigatorAmount; i++)
-                {
-                    if (doDCCheck(option2DC))
-                    {
-                        noOfPass++;
-                    }
-                    else
-                    {
-                        crewKilled++;
-                    }
-                    if (noOfPass > 3)
-                    {
-                        break;
-                    }
-                }
+                crewKilled = CalculateCrewLoss(stats.navigatorAmount, option2DC);
                 stats.RemoveStat("Navigator", crewKilled);
                 response += " " + crewKilled + " members of your navigation team died.";
                 break;
@@ -332,7 +186,30 @@ public class Event
 
     }
 
-    public bool doDCCheck(float DC)
+    private int CalculateCrewLoss(int crewNum, float DC)
+    {
+        int noOfPass = 0;
+        int crewKilled = 0;
+        for (int i = 0; i < crewNum; i++)
+        {
+            if (doDCCheck(DC))
+            {
+                noOfPass++;
+            }
+            else
+            {
+                crewKilled++;
+            }
+            if (noOfPass > 3)
+            {
+                break;
+            }
+        }
+
+        return crewKilled;
+    }
+
+    private bool doDCCheck(float DC)
     {
         int rand = Random.Range(0, 1);
 
