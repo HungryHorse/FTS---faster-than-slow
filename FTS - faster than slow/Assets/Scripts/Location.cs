@@ -12,4 +12,9 @@ public class Location : MonoBehaviour
     {
         events[eventIndex].SetText();
     }
+
+    public void Createresponse(bool option1)
+    {
+        events[eventIndex].SetResponse(option1);
+    }
 }
