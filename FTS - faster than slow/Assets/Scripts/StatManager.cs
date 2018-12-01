@@ -27,6 +27,7 @@ public class StatManager : MonoBehaviour {
     public int engineerAmount;
     public int navigatorAmount;
     public int securityAmount;
+    public int passengerAmount;
     
 
 	// Use this for initialization
@@ -40,7 +41,7 @@ public class StatManager : MonoBehaviour {
 		
 	}
 
-    public void AddCrew(string type, int amount)
+    public void AddStat(string type, int amount)
     {
         switch (type)
         {
@@ -64,13 +65,30 @@ public class StatManager : MonoBehaviour {
                 securityAmount += amount;
                 break;
 
+            case "Crew Health":
+                crewHealth += amount;
+                break;
+
+            case "Nutrition":
+                crewNutrition += amount;
+                break;
+
+            case "Ship Health":
+                crewNutrition += amount;
+                break;
+
+            case "Passengers":
+                passengerAmount += amount;
+                break;
+
             default:
                 break;
         }
+        WriteStats();
         CalculateStats();
     }
 
-    public void RemoveCrew(string type, int amount)
+    public void RemoveStat(string type, int amount)
     {
         switch (type)
         {
@@ -94,9 +112,26 @@ public class StatManager : MonoBehaviour {
                 securityAmount -= amount;
                 break;
 
+            case "Crew Health":
+                crewHealth -= amount;
+                break;
+
+            case "Nutrition":
+                crewNutrition -= amount;
+                break;
+
+            case "Ship Health":
+                crewNutrition -= amount;
+                break;
+
+            case "Passengers":
+                passengerAmount -= amount;
+                break;
+
             default:
                 break;
         }
+        WriteStats();
         CalculateStats();
     }
 
@@ -110,13 +145,13 @@ public class StatManager : MonoBehaviour {
 
     public void NextTurn()
     {
+        CalculateStats();
         //Crew Health
         crewHealth += medicAmount;
         Mathf.Clamp(crewHealth, 0, 100);
         //Crew Nutrition
-        crewNutrition -= totalCrew;
-        crewNutrition += (chefAmount * 3);
-        Mathf.Clamp(crewNutrition, 0, 100);
+        crewNutrition -= (totalCrew + passengerAmount);
+        crewNutrition += (chefAmount * 30);        
 
     }
 
@@ -131,6 +166,7 @@ public class StatManager : MonoBehaviour {
         engineerAmount = PlayerPrefs.GetInt("engineerAmount");
         navigatorAmount = PlayerPrefs.GetInt("navigatorAmount");
         securityAmount = PlayerPrefs.GetInt("securityAmount");
+        passengerAmount = PlayerPrefs.GetInt("passengerAmount");
     }
 
     public void WriteStats()
@@ -144,5 +180,11 @@ public class StatManager : MonoBehaviour {
         PlayerPrefs.SetInt("engineerAmount", engineerAmount);
         PlayerPrefs.SetInt("navigatorAmount", navigatorAmount);
         PlayerPrefs.SetInt("securityAmount", securityAmount);
+        PlayerPrefs.SetInt("passengerAmount", passengerAmount);
+    }
+
+    public void TestAddSec()
+    {
+        AddStat("Security", 2);
     }
 }
