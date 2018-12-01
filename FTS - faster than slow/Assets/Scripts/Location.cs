@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Location : MonoBehaviour
 {
-    public string name;
+    public int eventIndex;
     public Event[] events;
+    
 
-    private void Start()
+    public void EventText()
     {
-        events[0].SetText();
+        events[eventIndex].SetText();
     }
 }

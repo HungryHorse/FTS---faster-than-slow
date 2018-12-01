@@ -12,6 +12,9 @@ public class NodeEventScript : MonoBehaviour
     {
         gameObject.GetComponent<Node>().NextNode();
         Debug.Log("Pointer click");
-        nodeButton.SetLineToNull();
+        try{
+            nodeButton.SetLineToNull();
+        }
+        catch{}
     }
 }
