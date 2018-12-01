@@ -1,5 +1,9 @@
 You hear a number of loud bangs from the rear of your ship. After sending some engineers to investigate they tell you that your ship has moved into the path of some very fast moving shrapnel from a broken satellite!
 Boost the engines to try and move out of the way faster.
+E
+0.5
 You instruct your engineers to boost the engines and the ship careens forward, out of the way of oncoming damage.
 Stay at your current speed and hope that there won’t be many more bits - you can’t expend any more fuel.
+SH
+20
 You stand your ground and instruct your crew to brace.

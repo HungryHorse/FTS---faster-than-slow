@@ -1,0 +1,8 @@
+Your sensors tell you that there is food to be found on the surface below. Would you like to send a team to investigate?
+Yes send the chefs, they know what to look for.
+C
+0.75
+You send a team of your chefs to the surface to look for food.
+Yes send security, they’re hardy and well prepared.
+0.25
+You send a security team to the surface with a diagram of a potato. Hopefully they are successful.

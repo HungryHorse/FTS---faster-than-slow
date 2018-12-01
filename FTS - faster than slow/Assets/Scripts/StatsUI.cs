@@ -17,6 +17,8 @@ public class StatsUI : MonoBehaviour {
     public Text crewNutrition;
     public Slider crewHealth;
     public Slider shipHealth;
+    public Text crewHealthText;
+    public Text shipHealthText;
 
 	// Use this for initialization
 	void Start () {
@@ -40,5 +42,7 @@ public class StatsUI : MonoBehaviour {
         crewHealth.value = stats.crewHealth;
         crewNutrition.text = stats.crewNutrition.ToString();
         shipHealth.value = stats.shipHealth;
+        crewHealthText.text = stats.crewHealth.ToString();
+        shipHealthText.text = stats.shipHealth.ToString();
     }
 }
