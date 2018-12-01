@@ -16,9 +16,15 @@ public class NodeButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     public void OnPointerEnter(PointerEventData eventData)
     {
         Debug.Log("Entered");
-        line.SetVertexCount(2);
-        Vector3[] vectors = new Vector3[]{thisNode.transform.position, thisNode.ship.transform.position};
-        line.SetPositions(vectors);
+        for (int i = 0; i < thisNode.prevNodes.Length; i++)
+        {
+            if (thisNode.ship.currNode == thisNode.prevNodes[i])
+            {
+                line.SetVertexCount(2);
+                Vector3[] vectors = new Vector3[] { thisNode.transform.position, thisNode.ship.transform.position };
+                line.SetPositions(vectors);
+            }
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
