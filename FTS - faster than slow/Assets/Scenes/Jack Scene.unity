@@ -211,10 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5390643fd2da5548a04cc2172c72e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location:
-    name: 
-    fileNames: []
-    eventChance: 0
+  location: {fileID: 0}
   prevNodes: []
   ship: {fileID: 527863791}
 --- !u!114 &86203678
@@ -327,10 +324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5390643fd2da5548a04cc2172c72e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location:
-    name: 
-    fileNames: []
-    eventChance: 0
+  location: {fileID: 0}
   prevNodes: []
   ship: {fileID: 527863791}
 --- !u!114 &117638699
@@ -443,10 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5390643fd2da5548a04cc2172c72e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location:
-    name: 
-    fileNames: []
-    eventChance: 0
+  location: {fileID: 0}
   prevNodes: []
   ship: {fileID: 527863791}
 --- !u!114 &154367688
@@ -559,10 +550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5390643fd2da5548a04cc2172c72e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location:
-    name: 
-    fileNames: []
-    eventChance: 0
+  location: {fileID: 0}
   prevNodes: []
   ship: {fileID: 527863791}
 --- !u!114 &203813392
@@ -675,10 +663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5390643fd2da5548a04cc2172c72e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location:
-    name: 
-    fileNames: []
-    eventChance: 0
+  location: {fileID: 0}
   prevNodes: []
   ship: {fileID: 527863791}
 --- !u!114 &216450551
@@ -865,10 +850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5390643fd2da5548a04cc2172c72e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location:
-    name: 
-    fileNames: []
-    eventChance: 0
+  location: {fileID: 0}
   prevNodes: []
   ship: {fileID: 527863791}
 --- !u!114 &285379155
@@ -981,10 +963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5390643fd2da5548a04cc2172c72e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location:
-    name: 
-    fileNames: []
-    eventChance: 0
+  location: {fileID: 0}
   prevNodes: []
   ship: {fileID: 527863791}
 --- !u!114 &332127113
@@ -1097,10 +1076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5390643fd2da5548a04cc2172c72e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location:
-    name: 
-    fileNames: []
-    eventChance: 0
+  location: {fileID: 0}
   prevNodes:
   - {fileID: 203813391}
   ship: {fileID: 527863791}
@@ -1271,7 +1247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &704198204
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1392,10 +1368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5390643fd2da5548a04cc2172c72e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location:
-    name: 
-    fileNames: []
-    eventChance: 0
+  location: {fileID: 0}
   prevNodes: []
   ship: {fileID: 527863791}
 --- !u!114 &743108880
@@ -1508,10 +1481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5390643fd2da5548a04cc2172c72e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location:
-    name: 
-    fileNames: []
-    eventChance: 0
+  location: {fileID: 0}
   prevNodes: []
   ship: {fileID: 527863791}
 --- !u!114 &796006807
@@ -1705,10 +1675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5390643fd2da5548a04cc2172c72e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location:
-    name: 
-    fileNames: []
-    eventChance: 0
+  location: {fileID: 0}
   prevNodes: []
   ship: {fileID: 527863791}
 --- !u!114 &802309377
@@ -1821,10 +1788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5390643fd2da5548a04cc2172c72e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location:
-    name: 
-    fileNames: []
-    eventChance: 0
+  location: {fileID: 0}
   prevNodes:
   - {fileID: 203813391}
   ship: {fileID: 527863791}
@@ -2080,10 +2044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5390643fd2da5548a04cc2172c72e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location:
-    name: 
-    fileNames: []
-    eventChance: 0
+  location: {fileID: 0}
   prevNodes: []
   ship: {fileID: 527863791}
 --- !u!114 &1070648932
@@ -2650,10 +2611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5390643fd2da5548a04cc2172c72e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location:
-    name: 
-    fileNames: []
-    eventChance: 0
+  location: {fileID: 0}
   prevNodes: []
   ship: {fileID: 527863791}
 --- !u!114 &1250657177
@@ -2804,6 +2762,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1645940119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1645940121}
+  - component: {fileID: 1645940120}
+  m_Layer: 0
+  m_Name: Location
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1645940120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1645940119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9bb3493cbf2d05468301da8e1c41a10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  events:
+  - text: {fileID: 4900000, guid: 6ee6ad9a4007f6a45a7cc762277fb3bc, type: 3}
+    voiceLines: []
+--- !u!4 &1645940121
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1645940119}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1690908879
 GameObject:
   m_ObjectHideFlags: 0
@@ -2815,7 +2817,6 @@ GameObject:
   - component: {fileID: 1690908882}
   - component: {fileID: 1690908881}
   - component: {fileID: 1690908880}
-  - component: {fileID: 1690908884}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2901,19 +2902,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1690908884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1690908879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a52ce8d7a77d364e8b9bc3e0f64a35c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 4900000, guid: 6ee6ad9a4007f6a45a7cc762277fb3bc, type: 3}
-  voiceLines: []
 --- !u!1 &1921647695
 GameObject:
   m_ObjectHideFlags: 0
@@ -3012,10 +3000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5390643fd2da5548a04cc2172c72e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  location:
-    name: 
-    fileNames: []
-    eventChance: 0
+  location: {fileID: 0}
   prevNodes: []
   ship: {fileID: 527863791}
 --- !u!114 &1921647701
