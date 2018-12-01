@@ -6,7 +6,12 @@ public class Location : MonoBehaviour
 {
     public int eventIndex;
     public Event[] events;
-    
+
+    private void Start()
+    {
+        eventIndex = 0;
+        EventText();
+    }
 
     public void EventText()
     {

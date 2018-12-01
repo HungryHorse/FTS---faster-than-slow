@@ -4,4 +4,6 @@ NU
 10
 The stranded captain is very thankful and offers to repair your ship for your gracious act. They have some very handy engineers on board.
 Decline the offer - you have none to spare
+NU 
+0
 The stranded captain is understanding, not everyone has resources to spare. He wishes you well on your journey.
