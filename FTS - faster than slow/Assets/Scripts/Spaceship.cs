@@ -12,12 +12,6 @@ public class Spaceship : MonoBehaviour {
     {
         PositionUpdate(currNode);
 	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-		
-	}
 
     public void PositionUpdate(Node node)
     {
