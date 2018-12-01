@@ -2,10 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
-public class Location
+public class Location : MonoBehaviour
 {
-    public string name;
-    public TextAsset[] fileNames;
-    public float eventChance;
+    public int eventIndex;
+    public Event[] events;
+    
+
+    public void EventText()
+    {
+        events[eventIndex].SetText();
+    }
+
+    public void Createresponse(bool option1)
+    {
+        events[eventIndex].SetResponse(option1);
+    }
 }

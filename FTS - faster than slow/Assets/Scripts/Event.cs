@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Event : MonoBehaviour
+[System.Serializable]
+public class Event
 {
     public TextAsset text;
     public string[] voiceLines;
@@ -17,20 +18,15 @@ public class Event : MonoBehaviour
     Text option1;
     Text option2;
 
-	// Use this for initialization
-	void Start ()
+    public void SetText()
     {
+
         stats = GameObject.Find("Spaceship").GetComponent<StatManager>();
 
         description = GameObject.Find("Description").GetComponent<Text>();
         option1 = GameObject.Find("Option1").GetComponent<Text>();
         option2 = GameObject.Find("Option2").GetComponent<Text>();
 
-        SetText();
-    }
-
-    void SetText()
-    {
         if (text != null)
         {
             voiceLines = (text.text.Split('\n'));
@@ -44,8 +40,21 @@ public class Event : MonoBehaviour
         }
     }
 
-    void Option1(string effected)
+    public void SetResponse(bool option1)
     {
+        if (option1)
+        {
+            description.text = Option1(option1Effected);
+        }
+        else
+        {
+            description.text = Option2(option2Effected);
+        }
+    }
+
+    public string Option1(string effected)
+    {
+        response = voiceLines[4];
         int noOfPass;
         int crewKilled = 0;
         int passengersKilled = 0;
@@ -69,6 +78,7 @@ public class Event : MonoBehaviour
                     }
                 }
                 stats.RemoveStat("Security", crewKilled);
+                response += " " + crewKilled + " members of your sercurity team died.";
                 break;
 
             case "M":
@@ -89,6 +99,7 @@ public class Event : MonoBehaviour
                     }
                 }
                 stats.RemoveStat("Medic", crewKilled);
+                response += " " + crewKilled + " members of your medical team died.";
                 break;
 
             case "E":
@@ -109,6 +120,7 @@ public class Event : MonoBehaviour
                     }
                 }
                 stats.RemoveStat("Engineer", crewKilled);
+                response += " " + crewKilled + " members of your engineering team died.";
                 break;
 
             case "C":
@@ -129,6 +141,7 @@ public class Event : MonoBehaviour
                     }
                 }
                 stats.RemoveStat("Chef", crewKilled);
+                response += " " + crewKilled + " members of your culinary team died.";
                 break;
 
             case "N":
@@ -149,29 +162,38 @@ public class Event : MonoBehaviour
                     }
                 }
                 stats.RemoveStat("Navigator", crewKilled);
+                response += " " + crewKilled + " members of your navigation team died.";
                 break;
 
             case "P":
-                stats.RemoveStat("Passengers", (int)option1DC);
+                stats.RemoveStat("Passengers", (int)(option1DC * 100));
+                response += " " + (int)(option1DC * 100) + " passengers died.";
                 break;
 
             case "SH":
-                stats.RemoveStat("Ship Health", (int)option1DC);
+                stats.RemoveStat("Ship Health", (int)(option1DC * 100));
+                response += " Your ship lost " + (int)(option1DC * 100) + " health.";
                 break;
 
             case "CH":
-                stats.RemoveStat("Crew Health", (int)option1DC);
+                stats.RemoveStat("Crew Health", (int)(option1DC * 100));
+                response += " Your crew has lost " + (int)(option1DC * 100) + " health.";
                 break;
 
             case "NU":
                 stats.RemoveStat("Nutrition", (int)(option1DC * stats.crewNutrition));
+                response += " Your crew has lost " + (int)(option1DC * stats.crewNutrition) + " food.";
                 break;
-            
+
+            default:
+                break;
         }
+        return response;
     }	
 
-    void Option2(string effected)
+    public string Option2(string effected)
     {
+        response = voiceLines[8];
         int noOfPass;
         int crewKilled = 0;
         int passengersKilled = 0;
@@ -195,6 +217,7 @@ public class Event : MonoBehaviour
                     }
                 }
                 stats.RemoveStat("Security", crewKilled);
+                response += " " + crewKilled + " members of your sercurity team died.";
                 break;
 
             case "M":
@@ -215,6 +238,7 @@ public class Event : MonoBehaviour
                     }
                 }
                 stats.RemoveStat("Medic", crewKilled);
+                response += " " + crewKilled + " members of your medical team died.";
                 break;
 
             case "E":
@@ -235,6 +259,7 @@ public class Event : MonoBehaviour
                     }
                 }
                 stats.RemoveStat("Engineer", crewKilled);
+                response += " " + crewKilled + " members of your engineering team died.";
                 break;
 
             case "C":
@@ -255,6 +280,7 @@ public class Event : MonoBehaviour
                     }
                 }
                 stats.RemoveStat("Chef", crewKilled);
+                response += " " + crewKilled + " members of your culinary team died.";
                 break;
 
             case "N":
@@ -275,25 +301,33 @@ public class Event : MonoBehaviour
                     }
                 }
                 stats.RemoveStat("Navigator", crewKilled);
+                response += " " + crewKilled + " members of your navigation team died.";
                 break;
 
             case "P":
                 stats.RemoveStat("Passengers", (int)option2DC);
+                response += " Your crew has lost " + (int)(option2DC * 100) + " food.";
                 break;
 
             case "SH":
                 stats.RemoveStat("Ship Health", (int)option2DC);
+                response += " Your crew has lost " + (int)(option2DC * 100) + " food.";
                 break;
 
             case "CH":
                 stats.RemoveStat("Crew Health", (int)option2DC);
+                response += " Your crew has lost " + (int)(option2DC * 100) + " food.";
                 break;
 
             case "NU":
                 stats.RemoveStat("Nutrition", (int)(option2DC * stats.crewNutrition));
+                response += " Your crew has lost " + (int)(option2DC * stats.crewNutrition) + " food.";
                 break;
 
+            default:
+                break;
         }
+        return response;
 
     }
 
