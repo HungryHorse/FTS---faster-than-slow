@@ -43,9 +43,11 @@ public class Event : MonoBehaviour
         }
     }
 
-    void Option1(string effected, float DC)
+    void Option1(string effected)
     {
         int noOfPass;
+        int crewKilled = 0;
+        int passengersKilled = 0;
         switch (effected)
         {
             case "S":
@@ -58,41 +60,239 @@ public class Event : MonoBehaviour
                     }
                     else
                     {
-
+                        crewKilled++;
                     }
                     if(noOfPass > 3)
                     {
                         break;
                     }
                 }
+                stats.RemoveStat("Security", crewKilled);
                 break;
+
             case "M":
-
+                noOfPass = 0;
+                for (int i = 0; i < stats.medicAmount; i++)
+                {
+                    if (doDCCheck(option1DC))
+                    {
+                        noOfPass++;
+                    }
+                    else
+                    {
+                        crewKilled++;
+                    }
+                    if (noOfPass > 3)
+                    {
+                        break;
+                    }
+                }
+                stats.RemoveStat("Medic", crewKilled);
                 break;
+
             case "E":
-
+                noOfPass = 0;
+                for (int i = 0; i < stats.engineerAmount; i++)
+                {
+                    if (doDCCheck(option1DC))
+                    {
+                        noOfPass++;
+                    }
+                    else
+                    {
+                        crewKilled++;
+                    }
+                    if (noOfPass > 3)
+                    {
+                        break;
+                    }
+                }
+                stats.RemoveStat("Engineer", crewKilled);
                 break;
+
             case "C":
-
+                noOfPass = 0;
+                for (int i = 0; i < stats.chefAmount; i++)
+                {
+                    if (doDCCheck(option1DC))
+                    {
+                        noOfPass++;
+                    }
+                    else
+                    {
+                        crewKilled++;
+                    }
+                    if (noOfPass > 3)
+                    {
+                        break;
+                    }
+                }
+                stats.RemoveStat("Chef", crewKilled);
                 break;
+
             case "N":
-
+                noOfPass = 0;
+                for (int i = 0; i < stats.navigatorAmount; i++)
+                {
+                    if (doDCCheck(option1DC))
+                    {
+                        noOfPass++;
+                    }
+                    else
+                    {
+                        crewKilled++;
+                    }
+                    if (noOfPass > 3)
+                    {
+                        break;
+                    }
+                }
+                stats.RemoveStat("Navigator", crewKilled);
                 break;
+
+            case "P":
+                stats.RemoveStat("Passengers", (int)option1DC);
+                break;
+
             case "SH":
-
+                stats.RemoveStat("Ship Health", (int)option1DC);
                 break;
+
             case "CH":
-
+                stats.RemoveStat("Crew Health", (int)option1DC);
                 break;
-            case "NU":
 
+            case "NU":
+                stats.RemoveStat("Nutrition", (int)option1DC);
                 break;
             
         }
     }	
 
-    void Option2()
+    void Option2(string effected)
     {
+        int noOfPass;
+        int crewKilled = 0;
+        int passengersKilled = 0;
+        switch (effected)
+        {
+            case "S":
+                noOfPass = 0;
+                for (int i = 0; i < stats.securityAmount; i++)
+                {
+                    if (doDCCheck(option1DC))
+                    {
+                        noOfPass++;
+                    }
+                    else
+                    {
+                        crewKilled++;
+                    }
+                    if (noOfPass > 3)
+                    {
+                        break;
+                    }
+                }
+                stats.RemoveStat("Security", crewKilled);
+                break;
+
+            case "M":
+                noOfPass = 0;
+                for (int i = 0; i < stats.medicAmount; i++)
+                {
+                    if (doDCCheck(option1DC))
+                    {
+                        noOfPass++;
+                    }
+                    else
+                    {
+                        crewKilled++;
+                    }
+                    if (noOfPass > 3)
+                    {
+                        break;
+                    }
+                }
+                stats.RemoveStat("Medic", crewKilled);
+                break;
+
+            case "E":
+                noOfPass = 0;
+                for (int i = 0; i < stats.engineerAmount; i++)
+                {
+                    if (doDCCheck(option1DC))
+                    {
+                        noOfPass++;
+                    }
+                    else
+                    {
+                        crewKilled++;
+                    }
+                    if (noOfPass > 3)
+                    {
+                        break;
+                    }
+                }
+                stats.RemoveStat("Engineer", crewKilled);
+                break;
+
+            case "C":
+                noOfPass = 0;
+                for (int i = 0; i < stats.chefAmount; i++)
+                {
+                    if (doDCCheck(option1DC))
+                    {
+                        noOfPass++;
+                    }
+                    else
+                    {
+                        crewKilled++;
+                    }
+                    if (noOfPass > 3)
+                    {
+                        break;
+                    }
+                }
+                stats.RemoveStat("Chef", crewKilled);
+                break;
+
+            case "N":
+                noOfPass = 0;
+                for (int i = 0; i < stats.navigatorAmount; i++)
+                {
+                    if (doDCCheck(option1DC))
+                    {
+                        noOfPass++;
+                    }
+                    else
+                    {
+                        crewKilled++;
+                    }
+                    if (noOfPass > 3)
+                    {
+                        break;
+                    }
+                }
+                stats.RemoveStat("Navigator", crewKilled);
+                break;
+
+            case "P":
+                stats.RemoveStat("Passengers", (int)option1DC);
+                break;
+
+            case "SH":
+                stats.RemoveStat("Ship Health", (int)option1DC);
+                break;
+
+            case "CH":
+                stats.RemoveStat("Crew Health", (int)option1DC);
+                break;
+
+            case "NU":
+                stats.RemoveStat("Nutrition", (int)option1DC);
+                break;
+
+        }
 
     }
 
