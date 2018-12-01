@@ -52,7 +52,17 @@ public class Event
     {
         if (option1)
         {
-            responseText.text = Option1();
+            try
+            {
+                responseText.text = Option1();
+            }
+            catch
+            {
+                responseText.gameObject.SetActive(false);
+                description.gameObject.SetActive(true);
+                description.text += "\n\nYou did not have enough crew members to attempt that task.";
+                option2.gameObject.transform.parent.gameObject.SetActive(true);
+            }
         }
         else
         {
@@ -188,6 +198,11 @@ public class Event
 
     private int CalculateCrewLoss(int crewNum, float DC)
     {
+        if(crewNum <= 3)
+        {
+            throw new System.Exception();
+        }
+
         int noOfPass = 0;
         int crewKilled = 0;
         for (int i = 0; i < crewNum; i++)

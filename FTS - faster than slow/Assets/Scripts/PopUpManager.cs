@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PopUpManager : MonoBehaviour {
+public class PopUpManager : MonoBehaviour
+{
 
     public Location currlocation;
 
     [SerializeField]
     private GameObject description, optionOneButton, optionTwoButton, response;
-    
+
     public void UpdateLocation(Location location)
     {
-        if (!description.activeInHierarchy)
-        {
-            ToggleDescAndButtons();
-            response.SetActive(true);
-        }
+
+        response.SetActive(true);
+
 
         currlocation = location;
     }
