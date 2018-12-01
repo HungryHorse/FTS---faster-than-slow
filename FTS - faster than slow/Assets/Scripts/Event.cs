@@ -8,6 +8,7 @@ public class Event : MonoBehaviour
     public TextAsset text;
     public string[] voiceLines;
     private float option1DC;
+    private string response;
     private float option2DC;
     private string option1Effected;
     private string option2Effected;
@@ -37,9 +38,9 @@ public class Event : MonoBehaviour
             option1.text = voiceLines[1];
             option1Effected = voiceLines[2];
             option1DC = float.Parse(voiceLines[3]);
-            option2.text = voiceLines[4];
-            option2Effected = voiceLines[5];
-            option2DC = float.Parse(voiceLines[6]);
+            option2.text = voiceLines[5];
+            option2Effected = voiceLines[6];
+            option2DC = float.Parse(voiceLines[7]);
         }
     }
 
@@ -163,7 +164,7 @@ public class Event : MonoBehaviour
                 break;
 
             case "NU":
-                stats.RemoveStat("Nutrition", (int)option1DC);
+                stats.RemoveStat("Nutrition", (int)(option1DC * stats.crewNutrition));
                 break;
             
         }
@@ -180,7 +181,7 @@ public class Event : MonoBehaviour
                 noOfPass = 0;
                 for (int i = 0; i < stats.securityAmount; i++)
                 {
-                    if (doDCCheck(option1DC))
+                    if (doDCCheck(option2DC))
                     {
                         noOfPass++;
                     }
@@ -200,7 +201,7 @@ public class Event : MonoBehaviour
                 noOfPass = 0;
                 for (int i = 0; i < stats.medicAmount; i++)
                 {
-                    if (doDCCheck(option1DC))
+                    if (doDCCheck(option2DC))
                     {
                         noOfPass++;
                     }
@@ -220,7 +221,7 @@ public class Event : MonoBehaviour
                 noOfPass = 0;
                 for (int i = 0; i < stats.engineerAmount; i++)
                 {
-                    if (doDCCheck(option1DC))
+                    if (doDCCheck(option2DC))
                     {
                         noOfPass++;
                     }
@@ -240,7 +241,7 @@ public class Event : MonoBehaviour
                 noOfPass = 0;
                 for (int i = 0; i < stats.chefAmount; i++)
                 {
-                    if (doDCCheck(option1DC))
+                    if (doDCCheck(option2DC))
                     {
                         noOfPass++;
                     }
@@ -260,7 +261,7 @@ public class Event : MonoBehaviour
                 noOfPass = 0;
                 for (int i = 0; i < stats.navigatorAmount; i++)
                 {
-                    if (doDCCheck(option1DC))
+                    if (doDCCheck(option2DC))
                     {
                         noOfPass++;
                     }
@@ -277,19 +278,19 @@ public class Event : MonoBehaviour
                 break;
 
             case "P":
-                stats.RemoveStat("Passengers", (int)option1DC);
+                stats.RemoveStat("Passengers", (int)option2DC);
                 break;
 
             case "SH":
-                stats.RemoveStat("Ship Health", (int)option1DC);
+                stats.RemoveStat("Ship Health", (int)option2DC);
                 break;
 
             case "CH":
-                stats.RemoveStat("Crew Health", (int)option1DC);
+                stats.RemoveStat("Crew Health", (int)option2DC);
                 break;
 
             case "NU":
-                stats.RemoveStat("Nutrition", (int)option1DC);
+                stats.RemoveStat("Nutrition", (int)(option2DC * stats.crewNutrition));
                 break;
 
         }
