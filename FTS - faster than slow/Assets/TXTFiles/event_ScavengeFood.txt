@@ -1,4 +1,4 @@
-Your sensors tell you that there is food to be found on the surface below. Would you like to send a team to investigate?
+Your sensors tell you that there is food to be found on the surface below. Send a team to investigate.
 Yes send the chefs, they know what to look for.
 C
 0.75
