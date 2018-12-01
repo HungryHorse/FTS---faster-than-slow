@@ -6,9 +6,15 @@ using UnityEngine;
 public class Node : MonoBehaviour
 {
     public Location location;
+    public Location[] locationArray;
     public Node[] prevNodes;
     public Spaceship ship;
 
+    private void Start()
+    {
+        int rand = Random.Range(0, locationArray.Length);
+        location = Instantiate(locationArray[rand]);
+    }
 
     public void NextNode()
     {
