@@ -52,4 +52,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventIndex: 0
-  events: []
+  events:
+  - text: {fileID: 4900000, guid: 85f4fd6cf90e4314eb7b9709e19b4f31, type: 3}
+    voiceLines: []

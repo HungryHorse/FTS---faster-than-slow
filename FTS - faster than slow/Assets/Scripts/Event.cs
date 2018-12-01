@@ -48,19 +48,20 @@ public class Event
         }
         else
         {
-            description.text = Option2(option2Effected);
+            description.text = Option2();
         }
     }
 
     public string Option1()
     {
+        Debug.Log(option1Effected);
         response = voiceLines[4];
         int noOfPass;
         int crewKilled = 0;
         int passengersKilled = 0;
         switch (option1Effected)
         {
-            case "S":
+            case "S\r":
                 noOfPass = 0;
                 for(int i = 0; i < stats.securityAmount; i++)
                 {
@@ -81,7 +82,7 @@ public class Event
                 response += " " + crewKilled + " members of your sercurity team died.";
                 break;
 
-            case "M":
+            case "M\r":
                 noOfPass = 0;
                 for (int i = 0; i < stats.medicAmount; i++)
                 {
@@ -102,7 +103,7 @@ public class Event
                 response += " " + crewKilled + " members of your medical team died.";
                 break;
 
-            case "E":
+            case "E\r":
                 noOfPass = 0;
                 for (int i = 0; i < stats.engineerAmount; i++)
                 {
@@ -123,7 +124,7 @@ public class Event
                 response += " " + crewKilled + " members of your engineering team died.";
                 break;
 
-            case "C":
+            case "C\r":
                 noOfPass = 0;
                 for (int i = 0; i < stats.chefAmount; i++)
                 {
@@ -144,7 +145,7 @@ public class Event
                 response += " " + crewKilled + " members of your culinary team died.";
                 break;
 
-            case "N":
+            case "N\r":
                 noOfPass = 0;
                 for (int i = 0; i < stats.navigatorAmount; i++)
                 {
@@ -165,22 +166,22 @@ public class Event
                 response += " " + crewKilled + " members of your navigation team died.";
                 break;
 
-            case "P":
+            case "P\r":
                 stats.RemoveStat("Passengers", (int)(option1DC * 100));
                 response += " " + (int)(option1DC * 100) + " passengers died.";
                 break;
 
-            case "SH":
+            case "SH\r":
                 stats.RemoveStat("Ship Health", (int)(option1DC * 100));
                 response += " Your ship lost " + (int)(option1DC * 100) + " health.";
                 break;
 
-            case "CH":
+            case "CH\r":
                 stats.RemoveStat("Crew Health", (int)(option1DC * 100));
                 response += " Your crew has lost " + (int)(option1DC * 100) + " health.";
                 break;
 
-            case "NU":
+            case "NU\r":
                 stats.RemoveStat("Nutrition", (int)(option1DC * stats.crewNutrition));
                 response += " Your crew has lost " + (int)(option1DC * stats.crewNutrition) + " food.";
                 break;
@@ -191,15 +192,15 @@ public class Event
         return response;
     }	
 
-    public string Option2(string effected)
+    public string Option2()
     {
         response = voiceLines[8];
         int noOfPass;
         int crewKilled = 0;
         int passengersKilled = 0;
-        switch (effected)
+        switch (option2Effected)
         {
-            case "S":
+            case "S\r":
                 noOfPass = 0;
                 for (int i = 0; i < stats.securityAmount; i++)
                 {
@@ -220,7 +221,7 @@ public class Event
                 response += " " + crewKilled + " members of your sercurity team died.";
                 break;
 
-            case "M":
+            case "M\r":
                 noOfPass = 0;
                 for (int i = 0; i < stats.medicAmount; i++)
                 {
@@ -241,7 +242,7 @@ public class Event
                 response += " " + crewKilled + " members of your medical team died.";
                 break;
 
-            case "E":
+            case "E\r":
                 noOfPass = 0;
                 for (int i = 0; i < stats.engineerAmount; i++)
                 {
@@ -262,7 +263,7 @@ public class Event
                 response += " " + crewKilled + " members of your engineering team died.";
                 break;
 
-            case "C":
+            case "C\r":
                 noOfPass = 0;
                 for (int i = 0; i < stats.chefAmount; i++)
                 {
@@ -283,7 +284,7 @@ public class Event
                 response += " " + crewKilled + " members of your culinary team died.";
                 break;
 
-            case "N":
+            case "N\r":
                 noOfPass = 0;
                 for (int i = 0; i < stats.navigatorAmount; i++)
                 {
@@ -304,22 +305,22 @@ public class Event
                 response += " " + crewKilled + " members of your navigation team died.";
                 break;
 
-            case "P":
+            case "P\r":
                 stats.RemoveStat("Passengers", (int)option2DC);
                 response += " Your crew has lost " + (int)(option2DC * 100) + " food.";
                 break;
 
-            case "SH":
+            case "SH\r":
                 stats.RemoveStat("Ship Health", (int)option2DC);
                 response += " Your crew has lost " + (int)(option2DC * 100) + " food.";
                 break;
 
-            case "CH":
+            case "CH\r":
                 stats.RemoveStat("Crew Health", (int)option2DC);
                 response += " Your crew has lost " + (int)(option2DC * 100) + " food.";
                 break;
 
-            case "NU":
+            case "NU\r":
                 stats.RemoveStat("Nutrition", (int)(option2DC * stats.crewNutrition));
                 response += " Your crew has lost " + (int)(option2DC * stats.crewNutrition) + " food.";
                 break;
