@@ -13,10 +13,10 @@ public class StatsUI : MonoBehaviour {
     public Text chef;
     public Text engineer;
     public Text navigator;
-    public Text security;
-    public Text crewHealth;
+    public Text security;    
     public Text crewNutrition;
-    public Text shipHealth;
+    public Slider crewHealth;
+    public Slider shipHealth;
 
 	// Use this for initialization
 	void Start () {
@@ -37,8 +37,8 @@ public class StatsUI : MonoBehaviour {
         engineer.text = stats.engineerAmount.ToString();
         navigator.text = stats.navigatorAmount.ToString();
         security.text = stats.securityAmount.ToString();
-        crewHealth.text = stats.crewHealth.ToString();
+        crewHealth.value = stats.crewHealth;
         crewNutrition.text = stats.crewNutrition.ToString();
-        shipHealth.text = stats.shipHealth.ToString();
+        shipHealth.value = stats.shipHealth;
     }
 }
