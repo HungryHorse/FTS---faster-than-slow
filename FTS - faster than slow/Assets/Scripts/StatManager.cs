@@ -157,7 +157,7 @@ public class StatManager : MonoBehaviour
         //Ship Health
         shipHealth += Mathf.FloorToInt(engineerAmount / 2);
         shipHealth = Mathf.Clamp(shipHealth, 0, 100);
-
+        WriteStats();
         CalculateStats();
     }
 
