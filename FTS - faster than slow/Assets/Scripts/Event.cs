@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Event
 {
     public TextAsset text;
-    public string[] voiceLines;
+    public string[] voiceLines = new string[10];
     private float option1DC;
     private string response;
     private float option2DC;
@@ -21,7 +21,7 @@ public class Event
     public void SetText()
     {
 
-        stats = GameObject.Find("Spaceship").GetComponent<StatManager>();
+        stats = GameObject.Find("Stats").GetComponent<StatManager>();
 
         description = GameObject.Find("Description").GetComponent<Text>();
         option1 = GameObject.Find("Option1").GetComponent<Text>();
@@ -44,7 +44,7 @@ public class Event
     {
         if (option1)
         {
-            description.text = Option1(option1Effected);
+            description.text = Option1();
         }
         else
         {
@@ -52,13 +52,13 @@ public class Event
         }
     }
 
-    public string Option1(string effected)
+    public string Option1()
     {
         response = voiceLines[4];
         int noOfPass;
         int crewKilled = 0;
         int passengersKilled = 0;
-        switch (effected)
+        switch (option1Effected)
         {
             case "S":
                 noOfPass = 0;
