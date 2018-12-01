@@ -1,12 +1,14 @@
 fileFormatVersion: 2
-guid: 481a9dd0163bd50429eec0d81fb1bfc8
+guid: 08d057f18acc483478ef1dbf4a426ec9
 TextureImporter:
   fileIDToRecycleName:
-    21300000: roles icons w passenger_0
-    21300002: roles icons w passenger_1
-    21300004: roles icons w passenger_2
-    21300006: roles icons w passenger_3
-    21300008: roles icons w passenger_4
+    21300000: stats icons_0
+    21300002: stats icons_1
+    21300004: stats icons_2
+    21300006: stats icons_3
+    21300008: stats icons_4
+    21300010: stats icons_5
+    21300012: stats icons_6
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -87,7 +89,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: roles icons w passenger_0
+      name: stats icons_0
       rect:
         serializedVersion: 2
         x: 0
@@ -101,13 +103,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 338bdb0de8966024d981be3eb0ee288e
+      spriteID: 41cf6551fe8782b4eb5cc7897d921bfd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roles icons w passenger_1
+      name: stats icons_1
       rect:
         serializedVersion: 2
         x: 54
@@ -121,13 +123,33 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12e4f01dbf371d148856fbcaa66848a2
+      spriteID: d377a71318f73784cbb6dd4ccd510df6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roles icons w passenger_2
+      name: stats icons_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 108
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371d9df120fcbfb46bc5b2cfb47886ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stats icons_3
       rect:
         serializedVersion: 2
         x: 0
@@ -141,13 +163,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 574875b1d5e3e754b89ecec193b1b0e5
+      spriteID: 80f86080bbb480340814d26882b6099d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roles icons w passenger_3
+      name: stats icons_4
       rect:
         serializedVersion: 2
         x: 54
@@ -161,13 +183,33 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a582715a8061044fab2109b420a4d80
+      spriteID: 8b5ba4f895ddafb4fbdaf4efeef81d0f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roles icons w passenger_4
+      name: stats icons_5
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 54
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26eadde6dac7cf049a9aba2c8cbfd9a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stats icons_6
       rect:
         serializedVersion: 2
         x: 0
@@ -181,7 +223,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a802189aa68968f4eb320b225ae9aab9
+      spriteID: 662c17e469569f946ad76616bf0e9983
       vertices: []
       indices: 
       edges: []
@@ -189,7 +231,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 73353a926d51ea14ab2adb4897310256
+    spriteID: aa2482c681337bb408ddb42e19bb10fa
     vertices: []
     indices: 
     edges: []
