@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StatManager : MonoBehaviour {
+public class StatManager : MonoBehaviour
+{
 
     //Starting Values
     [SerializeField]
@@ -18,7 +19,7 @@ public class StatManager : MonoBehaviour {
     public int navigationPoints;
     public int shipHealth;
     public int enginePower;
-    
+
     //Crew Totals
     public int totalCrew;
     public int medicAmount;
@@ -27,18 +28,20 @@ public class StatManager : MonoBehaviour {
     public int navigatorAmount;
     public int securityAmount;
     public int passengerAmount;
-    
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start()
+    {
         ReadStats();
         CalculateStats();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     public void AddStat(string type, int amount)
     {
@@ -73,7 +76,7 @@ public class StatManager : MonoBehaviour {
                 break;
 
             case "Ship Health":
-                crewNutrition += amount;
+                shipHealth += amount;
                 break;
 
             case "Passengers":
@@ -120,7 +123,7 @@ public class StatManager : MonoBehaviour {
                 break;
 
             case "Ship Health":
-                crewNutrition -= amount;
+                shipHealth -= amount;
                 break;
 
             case "Passengers":
@@ -144,14 +147,16 @@ public class StatManager : MonoBehaviour {
 
     public void NextTurn()
     {
-        
+
         //Crew Health
         crewHealth += medicAmount;
-        Mathf.Clamp(crewHealth, 0, 100);
+        crewHealth = Mathf.Clamp(crewHealth, 0, 100);
         //Crew Nutrition
         crewNutrition -= (totalCrew + passengerAmount);
         crewNutrition += (chefAmount * 30);
-
+        //Ship Health
+        shipHealth += Mathf.FloorToInt(engineerAmount / 2);
+        shipHealth = Mathf.Clamp(shipHealth, 0, 100);
 
         CalculateStats();
     }
@@ -184,9 +189,37 @@ public class StatManager : MonoBehaviour {
         PlayerPrefs.SetInt("passengerAmount", passengerAmount);
     }
 
-    public void TestAddSec()
+    public void AddDemoValues()
     {
-        AddStat("Security", 2);
+        AddStat("Security", 7);
+        AddStat("Medic", 5);
+        AddStat("Engineer", 8);
+        AddStat("Chef", 15);
+        AddStat("Navigator", 3);
+
+        AddStat("Crew Health", 75);
+        AddStat("Ship Health", 69);
+        AddStat("Passengers", 300);
+    }
+
+    public void ResetValues()
+    {
+        crewHealth = 0;
+        crewNutrition = 0;
+        navigationPoints = 0;
+        shipHealth = 0;
+        enginePower = 0;
+
+        //Crew Totals
+        totalCrew = 0;
+        medicAmount = 0;
+        chefAmount = 0;
+        engineerAmount = 0;
+        navigatorAmount = 0;
+        securityAmount = 0;
+        passengerAmount = 0;
+        WriteStats();
+        CalculateStats();
     }
 
 
