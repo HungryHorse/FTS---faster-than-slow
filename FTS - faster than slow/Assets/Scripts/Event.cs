@@ -40,7 +40,19 @@ public class Event
         }
     }
 
-    public void Option1(string effected)
+    public void SetResponse(bool option1)
+    {
+        if (option1)
+        {
+            description.text = Option1(option1Effected);
+        }
+        else
+        {
+            description.text = Option2(option2Effected);
+        }
+    }
+
+    public string Option1(string effected)
     {
         response = voiceLines[4];
         int noOfPass;
@@ -176,9 +188,10 @@ public class Event
             default:
                 break;
         }
+        return response;
     }	
 
-    public void Option2(string effected)
+    public string Option2(string effected)
     {
         response = voiceLines[8];
         int noOfPass;
@@ -314,6 +327,7 @@ public class Event
             default:
                 break;
         }
+        return response;
 
     }
 
