@@ -142,6 +142,8 @@ public class StatManager : MonoBehaviour
         totalCrew = medicAmount + chefAmount + engineerAmount + navigatorAmount + securityAmount;
         navigationPoints = navigatorAmount;
         enginePower = engineerAmount;
+        crewHealth = Mathf.Clamp(crewHealth, 0, 100);
+        shipHealth = Mathf.Clamp(shipHealth, 0, 100);
         GetComponent<StatsUI>().UpdateUI();
     }
 
@@ -157,7 +159,7 @@ public class StatManager : MonoBehaviour
         //Ship Health
         shipHealth += Mathf.FloorToInt(engineerAmount / 2);
         shipHealth = Mathf.Clamp(shipHealth, 0, 100);
-
+        WriteStats();
         CalculateStats();
     }
 
@@ -200,6 +202,8 @@ public class StatManager : MonoBehaviour
         AddStat("Crew Health", 75);
         AddStat("Ship Health", 69);
         AddStat("Passengers", 300);
+        
+        
     }
 
     public void ResetValues()

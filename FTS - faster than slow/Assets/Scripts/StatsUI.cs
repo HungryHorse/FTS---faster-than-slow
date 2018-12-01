@@ -20,10 +20,18 @@ public class StatsUI : MonoBehaviour {
     public Text crewHealthText;
     public Text shipHealthText;
 
+    public bool isIniti;
+
 	// Use this for initialization
 	void Start () {
-        stats = GetComponent<StatManager>();
+        //stats = GetComponent<StatManager>();
+        UpdateUI();
 	}
+
+    void Awake()
+    {
+        stats = GetComponent<StatManager>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
