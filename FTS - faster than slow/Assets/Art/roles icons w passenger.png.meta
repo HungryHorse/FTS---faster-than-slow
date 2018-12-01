@@ -90,12 +90,12 @@ TextureImporter:
       name: roles icons w passenger_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 108
-        width: 54
-        height: 54
+        x: 9
+        y: 119
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -110,12 +110,12 @@ TextureImporter:
       name: roles icons w passenger_1
       rect:
         serializedVersion: 2
-        x: 54
-        y: 108
-        width: 54
-        height: 54
+        x: 63
+        y: 120
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -130,12 +130,12 @@ TextureImporter:
       name: roles icons w passenger_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 54
-        width: 54
-        height: 54
+        x: 9
+        y: 65
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,12 +150,12 @@ TextureImporter:
       name: roles icons w passenger_3
       rect:
         serializedVersion: 2
-        x: 54
-        y: 54
-        width: 54
-        height: 54
+        x: 63
+        y: 65
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,12 +170,12 @@ TextureImporter:
       name: roles icons w passenger_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 54
-        height: 54
+        x: 9
+        y: 11
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
