@@ -5,20 +5,41 @@ using UnityEngine;
 public class Location : MonoBehaviour
 {
     public int eventIndex;
-    public Event[] events;
-
-    private void Start()
-    {
-        eventIndex = Random.Range(0, events.Length);
-    }
+    public bool isGood;
+    public Event[] goodEvents;
+    public Event[] badEvents;
 
     public void EventText()
     {
-        events[eventIndex].SetText();
+
+        if (isGood)
+        {
+            eventIndex = Random.Range(0, goodEvents.Length);
+        }
+        else
+        {
+            eventIndex = Random.Range(0, badEvents.Length);
+        }
+
+        if (isGood)
+        {
+            goodEvents[eventIndex].SetText();
+        }
+        else
+        {
+            badEvents[eventIndex].SetText();
+        }
     }
 
     public void Createresponse(bool option1)
     {
-        events[eventIndex].SetResponse(option1);
+        if (isGood)
+        {
+            goodEvents[eventIndex].SetResponse(option1);
+        }
+        else
+        {
+            badEvents[eventIndex].SetResponse(option1);
+        }
     }
 }
