@@ -12,6 +12,7 @@ public class Node : MonoBehaviour
     public Spaceship ship;
     public float goodChance;
     public float badChance;
+    public int distance;
     public StatManager stat;
 
     [SerializeField]
@@ -22,6 +23,7 @@ public class Node : MonoBehaviour
         stat = GameObject.FindGameObjectWithTag("StatManager").GetComponent<StatManager>();
         goodChance = Random.Range(0, 0.35f);
         badChance = 1 - goodChance;
+        distance = Random.Range(70, 150);
         int rand = Random.Range(0, locationArray.Length);
 
         if(!first)
@@ -47,7 +49,9 @@ public class Node : MonoBehaviour
                 {
                     location.isGood = true;
                 }
+                GameObject.FindGameObjectWithTag("DangerZone").GetComponent<DangerZone>().UpdatePosition(distance);
                 ship.PositionUpdate(this);
+                
             }
         }
     }

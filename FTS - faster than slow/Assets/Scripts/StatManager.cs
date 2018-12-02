@@ -144,7 +144,7 @@ public class StatManager : MonoBehaviour
     {
         totalCrew = medicAmount + chefAmount + engineerAmount + navigatorAmount + securityAmount;
         navigationPoints = navigatorAmount;
-        enginePower = engineerAmount;
+        enginePower = (30 + (engineerAmount * 2) + (shipHealth / 100 * 30));
         crewHealth = Mathf.Clamp(crewHealth, 0, 100);
         shipHealth = Mathf.Clamp(shipHealth, 0, 100);
         GetComponent<StatsUI>().UpdateUI();
