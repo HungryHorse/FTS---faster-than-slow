@@ -5,6 +5,7 @@ using UnityEngine;
 public class WarpIn : MonoBehaviour {
 
     public LocationForShipInWorld spaceship;
+    public StarMapmanager starmapManager;
     public AudioClip warpSound;
 
     private void Awake()
@@ -36,7 +37,7 @@ public class WarpIn : MonoBehaviour {
 
     public void WarpedOut()
     {
-        spaceship.ActivateStarMap();
+        starmapManager.TurnStarmapsOn();
         Debug.Log("HI");
     }
 }

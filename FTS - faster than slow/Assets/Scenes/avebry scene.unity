@@ -3397,7 +3397,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &291818779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4030,7 +4030,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!135 &355312292
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4090,6 +4090,48 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &355729182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 355729184}
+  - component: {fileID: 355729183}
+  m_Layer: 0
+  m_Name: StarMapManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &355729183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 355729182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e78e8bb4c327d34eae7a5ba58204425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starmapVisual: {fileID: 1194872062}
+  starmapButtons: {fileID: 1168560992}
+--- !u!4 &355729184
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 355729182}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.67414904, y: -0.011797791, z: -0.18554688}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &360900015
 GameObject:
   m_ObjectHideFlags: 0
@@ -4324,6 +4366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spaceship: {fileID: 372406042}
+  starmapManager: {fileID: 355729183}
   warpSound: {fileID: 8300000, guid: 84523599ff78dbb44b9ccabd37acb160, type: 3}
 --- !u!114 &372406042
 MonoBehaviour:
@@ -4338,7 +4381,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   location: {fileID: 0}
   popUpManager: {fileID: 586437139}
-  starmaps: []
+  starmaps:
+  - {fileID: 1194872062}
+  - {fileID: 1168560992}
 --- !u!1 &380265329
 GameObject:
   m_ObjectHideFlags: 0
@@ -4392,7 +4437,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &380265331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4718,7 +4763,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &403605669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4982,7 +5027,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &408521942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5764,7 +5809,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &503570888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6771,7 +6816,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &543310099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8632,7 +8677,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &739970222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8841,7 +8886,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &747539599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9295,7 +9340,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &757232789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12128,7 +12173,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &871410673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12483,7 +12528,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &913558915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14496,7 +14541,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &1099141270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17728,7 +17773,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &1410556715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19656,7 +19701,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &1500827804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19871,7 +19916,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &1503781844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20089,7 +20134,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &1524957064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22647,6 +22692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currNode: {fileID: 543310098}
   locationForShip: {fileID: 372406042}
+  starmapManager: {fileID: 355729183}
 --- !u!65 &1764809654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24038,7 +24084,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &1923359907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24179,7 +24225,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &1932197663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24521,7 +24567,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &1952250390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25025,7 +25071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   first: 0
-  location: {fileID: 0}
+  location: {fileID: 114621414138623794, guid: 7503456b9c4b0524daab892f7c0248d8, type: 2}
   locationArray:
   - {fileID: 114229469610177242, guid: 0f5558312ba64e54ea2729cfd1aa9157, type: 2}
   - {fileID: 114091990025348650, guid: 91e5f1a0d624c834b912b89d013382a6, type: 2}
@@ -25045,7 +25091,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &2055673690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25421,7 +25467,7 @@ MonoBehaviour:
   goodChance: 0
   badChance: 0
   stat: {fileID: 0}
-  starmaps: []
+  starmapManager: {fileID: 0}
 --- !u!114 &2083886445
 MonoBehaviour:
   m_ObjectHideFlags: 0

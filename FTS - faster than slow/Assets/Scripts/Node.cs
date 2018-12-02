@@ -13,7 +13,9 @@ public class Node : MonoBehaviour
     public float goodChance;
     public float badChance;
     public StatManager stat;
-    public GameObject[] starmaps;
+
+    [SerializeField]
+    private StarMapmanager starmapManager;
 
     private void Awake()
     {
@@ -33,14 +35,7 @@ public class Node : MonoBehaviour
             location = Instantiate(location);
             ship.PositionUpdate(this);
         }
-    }
-
-    private void Start()
-    {
-        starmaps = GameObject.FindGameObjectsWithTag("Starmap");
-        starmaps[0].SetActive(false);
-        starmaps[1].SetActive(false);
-    }
+    }    
 
     public void NextNode()
     {
@@ -54,8 +49,6 @@ public class Node : MonoBehaviour
                     location.isGood = true;
                 }
                 ship.PositionUpdate(this);
-                starmaps[0].SetActive(false);
-                starmaps[1].SetActive(false);
             }
         }
     }

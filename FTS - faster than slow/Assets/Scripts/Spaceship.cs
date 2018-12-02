@@ -6,6 +6,7 @@ using UnityEngine;
 public class Spaceship : MonoBehaviour {
     public Node currNode;
     public LocationForShipInWorld locationForShip;
+    public StarMapmanager starmapManager;
     
 
     public void PositionUpdate(Node node)
@@ -16,5 +17,7 @@ public class Spaceship : MonoBehaviour {
         locationForShip.EventSpawn();
 
         locationForShip.location.EnterLocation();
+
+        starmapManager.TurnStarmapsOff();
     }
 }
