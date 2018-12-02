@@ -385,47 +385,47 @@ public class Event
         {
             case "S\r":
                 stats.AddStat("Security", (int)(option2Reward * 100));
-                text += "Your crew expands adding " + option1Reward * 100 + " talented security officers to your ranks";
+                text += "Your crew expands adding " + option2Reward * 100 + " talented security officers to your ranks";
                 break;
 
             case "M\r":
                 stats.AddStat("Medic", (int)(option2Reward * 100));
-                text += "Your crew feels much more spry now that " + option1Reward * 100 + " medical personnel have joined the ship";
+                text += "Your crew feels much more spry now that " + option2Reward * 100 + " medical personnel have joined the ship";
                 break;
 
             case "E\r":
                 stats.AddStat("Engineer", (int)(option2Reward * 100));
-                text += "Your engines aren't going to fail anytime soon with " + option1Reward * 100 + " more engineers on the ship";
+                text += "Your engines aren't going to fail anytime soon with " + option2Reward * 100 + " more engineers on the ship";
                 break;
 
             case "C\r":
                 stats.AddStat("Chef", (int)(option2Reward * 100));
-                text += "Your crew won't be going hungry with these " + option1Reward * 100 + " new gourmet chefs";
+                text += "Your crew won't be going hungry with these " + option2Reward * 100 + " new gourmet chefs";
                 break;
 
             case "N\r":
                 stats.AddStat("Navigator", (int)(option2Reward * 100));
-                text += "These " + option1Reward * 100 + " new navigators promise they won't get you lost anytime soon";
+                text += "These " + option2Reward * 100 + " new navigators promise they won't get you lost anytime soon";
                 break;
 
             case "P\r":
                 stats.AddStat("Passengers", (int)(option2Reward * 100));
-                text += "You gain " + option1Reward + " passengers";
+                text += "You gain " + option2Reward + " passengers";
                 break;
 
             case "SH\r":
                 stats.AddStat("Ship Health", (int)(option2Reward * 100));
-                text += "You manage to repair " + option1Reward * 100 + "% of your hull";
+                text += "You manage to repair " + option2Reward * 100 + "% of your hull";
                 break;
 
             case "CH\r":
                 stats.AddStat("Crew Health", (int)(option2Reward * 100));
-                text += "Your crew gains " + option1Reward * 100 + " health";
+                text += "Your crew gains " + option2Reward * 100 + " health";
                 break;
 
             case "NU\r":
                 stats.AddStat("Nutrition", (int)(option2Reward * 100));
-                text += "You manage to salvage " + option1Reward * 100 + " units of food";
+                text += "You manage to salvage " + option2Reward * 100 + " units of food";
                 break;
 
             default:
