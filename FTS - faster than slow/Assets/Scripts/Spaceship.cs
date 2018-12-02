@@ -19,4 +19,13 @@ public class Spaceship : MonoBehaviour {
 
         starmapManager.TurnStarmapsOff();
     }
+
+    void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "DangerZone")
+        {
+            Debug.Log("Caught by the dong");
+
+        }
+    }
 }
