@@ -48,9 +48,9 @@ public class StatsUI : MonoBehaviour {
         engineer.text = stats.engineerAmount.ToString();
         navigator.text = stats.navigatorAmount.ToString();
         security.text = stats.securityAmount.ToString();
-        crewHealth.fillAmount = stats.crewHealth;
+        crewHealth.fillAmount = (float)stats.crewHealth / 100f;
         crewNutrition.text = stats.crewNutrition.ToString();
-        shipHealth.fillAmount = stats.shipHealth;
+        shipHealth.fillAmount = (float)stats.shipHealth / 100f;
         crewHealthText.text = stats.crewHealth.ToString();
         shipHealthText.text = stats.shipHealth.ToString();
     }
