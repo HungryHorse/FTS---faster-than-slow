@@ -91,7 +91,7 @@ public class Node : MonoBehaviour
 
     public void SetBadChance()
     {
-        badChance = goodChance - 1;
+        badChance = 1 - goodChance;
     }
 
     public string GetGoodPercentage()
