@@ -20,6 +20,7 @@ public class Event
     private string option2Effected;
     private string option2RewardIdentifer;
     private StatManager stats;
+    GameObject Continue;
     Text description;
     Text option1Text;
     Text option2Text;
@@ -35,9 +36,11 @@ public class Event
             description = GameObject.FindGameObjectWithTag("Description").GetComponent<Text>();
             option1Text = GameObject.FindGameObjectWithTag("Option1").GetComponent<Text>();
             option2Text = GameObject.FindGameObjectWithTag("Option2").GetComponent<Text>();
+            Continue = GameObject.FindGameObjectWithTag("Continue");
 
             responseText = GameObject.FindGameObjectWithTag("Response").GetComponent<Text>();
             responseText.gameObject.SetActive(false);
+            Continue.gameObject.SetActive(false);
         }
         catch { }
 
@@ -46,7 +49,7 @@ public class Event
         if (text != null)
         {
             voiceLines = (text.text.Split('\n'));
-            if (voiceLines.Length > 2)
+            if (voiceLines.Length > 5)
             {
                 description.text = voiceLines[0];
                 option1Text.text = voiceLines[1];
@@ -60,6 +63,8 @@ public class Event
             {
                 description.text = voiceLines[0];
                 option1Text.text = voiceLines[1];
+                Continue.gameObject.SetActive(true);
+                option1Text.gameObject.transform.parent.gameObject.SetActive(false);
                 option2Text.gameObject.transform.parent.gameObject.SetActive(false);
                 return;
             }
@@ -96,6 +101,7 @@ public class Event
                 responseText.text = Option1();
                 failedATest = false;
                 responseText.gameObject.SetActive(true);
+                Continue.gameObject.SetActive(true);
             }
             catch(System.Exception ex)
             {
@@ -121,6 +127,7 @@ public class Event
                 responseText.text = Option2();
                 failedATest = false;
                 responseText.gameObject.SetActive(true);
+                Continue.gameObject.SetActive(true);
             }
             catch(System.Exception ex)
             {

@@ -11,8 +11,25 @@ public class WarpIn : MonoBehaviour {
         GetComponent<Animator>().Play("WarpIn");
     }
 
+    public void WarpInAnimation()
+    {
+        GetComponent<Animator>().Play("WarpIn");
+    }
+
     public void WarpedIn()
     {
         spaceship.location.EventText();
+        GetComponent<Animator>().Play("IdleAnimation");
+    }
+
+    public void WarpOutAnimation()
+    {
+        GetComponent<Animator>().Play("WarpOut");
+    }
+
+    public void WarpedOut()
+    {
+        spaceship.ActivateStarMap();
+        Debug.Log("HI");
     }
 }

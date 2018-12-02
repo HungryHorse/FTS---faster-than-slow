@@ -12,6 +12,7 @@ TagManager:
   - Background
   - Starmap
   - SoundPlayer
+  - Continue
   layers:
   - Default
   - TransparentFX
