@@ -15,8 +15,8 @@ public class StatsUI : MonoBehaviour {
     public Text navigator;
     public Text security;    
     public Text crewNutrition;
-    public Slider crewHealth;
-    public Slider shipHealth;
+    public Image crewHealth;
+    public Image shipHealth;
     public Text crewHealthText;
     public Text shipHealthText;
 
@@ -48,9 +48,9 @@ public class StatsUI : MonoBehaviour {
         engineer.text = stats.engineerAmount.ToString();
         navigator.text = stats.navigatorAmount.ToString();
         security.text = stats.securityAmount.ToString();
-        crewHealth.value = stats.crewHealth;
+        crewHealth.fillAmount = stats.crewHealth;
         crewNutrition.text = stats.crewNutrition.ToString();
-        shipHealth.value = stats.shipHealth;
+        shipHealth.fillAmount = stats.shipHealth;
         crewHealthText.text = stats.crewHealth.ToString();
         shipHealthText.text = stats.shipHealth.ToString();
     }
