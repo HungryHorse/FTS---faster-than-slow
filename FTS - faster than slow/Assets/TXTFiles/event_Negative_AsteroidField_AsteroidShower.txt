@@ -1,0 +1,7 @@
+As you pass through the field you begin to hear a pattering like rain on the outside of the ship. It gets heavier and heavier until you are being pelted with tiny balls of ice and stone. You will need to turn the ship to reduce impact. Which way would ou like to turn.
+Turn the passenger quarters towards the barrage. You must protect your crew.
+P
+0.35
+Turn the front of the ship toward the danger. You hope the kitchen staff are on their lunch break.
+C
+0.4
