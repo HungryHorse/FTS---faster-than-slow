@@ -41,4 +41,12 @@ public class NodeToolTip : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     {
         Destroy(currentToolTip);
     }
+
+    void Update()
+    {
+        if (!gameObject.transform.parent.gameObject.active)
+        {
+            Destroy(currentToolTip);
+        }
+    }
 }
