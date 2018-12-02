@@ -261,7 +261,7 @@ public class Event
 
             case "P\r":
                 stats.AddStat("Passengers", (int)(option1Reward * 100));
-                text += "You gain " + option1Reward + " passengers";
+                text += "You gain " + option1Reward * 100 + " passengers";
                 break;
 
             case "SH\r":
@@ -348,17 +348,17 @@ public class Event
                 break;
 
             case "P\r":
-                stats.RemoveStat("Passengers", (int)option2DC);
+                stats.RemoveStat("Passengers", (int)(option2DC * 100));
                 response += "\n\n" + (int)(option2DC * 100) + " passengers died.";
                 break;
 
             case "SH\r":
-                stats.RemoveStat("Ship Health", (int)option2DC);
+                stats.RemoveStat("Ship Health", (int)(option2DC * 100));
                 response += "\n\nYour ship has lost " + (int)(option2DC * 100) + " health.";
                 break;
 
             case "CH\r":
-                stats.RemoveStat("Crew Health", (int)option2DC);
+                stats.RemoveStat("Crew Health", (int)(option2DC * 100));
                 response += "\n\nYour crew has lost " + (int)(option2DC * 100) + " health.";
                 break;
 
