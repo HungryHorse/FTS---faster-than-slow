@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PopUpManager : MonoBehaviour
 {
-
+    public WarpIn warp;
     public Location currlocation;
 
     [SerializeField]
-    private GameObject description, optionOneButton, optionTwoButton, response;
+    private GameObject description, optionOneButton, optionTwoButton, response, Continue;
     [SerializeField]
     private AudioClip buttonClickSound;
 
@@ -32,6 +32,11 @@ public class PopUpManager : MonoBehaviour
         currlocation.Createresponse(false);
         GameObject.FindGameObjectWithTag("SoundPlayer").GetComponent<SoundPlayer>().PlaySound(buttonClickSound);
     }
+    public void onContinue()
+    {
+        warp.WarpOutAnimation();
+        TurnOffAll();
+    }
 
     public void TurnOnDesc()
     {
@@ -45,5 +50,14 @@ public class PopUpManager : MonoBehaviour
         description.SetActive(false);
         optionOneButton.SetActive(false);
         optionTwoButton.SetActive(false);
+    }
+
+    public void TurnOffAll()
+    {
+        description.SetActive(false);
+        optionOneButton.SetActive(false);
+        optionTwoButton.SetActive(false);
+        Continue.SetActive(false);
+        response.SetActive(false);
     }
 }

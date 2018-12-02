@@ -36,8 +36,8 @@ public class Event
             description = GameObject.FindGameObjectWithTag("Description").GetComponent<Text>();
             option1Text = GameObject.FindGameObjectWithTag("Option1").GetComponent<Text>();
             option2Text = GameObject.FindGameObjectWithTag("Option2").GetComponent<Text>();
-            Continue = GameObject.FindGameObjectWithTag("Continue");
 
+            Continue = GameObject.FindGameObjectWithTag("Continue");
             responseText = GameObject.FindGameObjectWithTag("Response").GetComponent<Text>();
             responseText.gameObject.SetActive(false);
             Continue.gameObject.SetActive(false);
@@ -62,7 +62,7 @@ public class Event
             else
             {
                 description.text = voiceLines[0];
-                option1Text.text = voiceLines[1];
+                Continue.GetComponentInChildren<Text>().text = voiceLines[1];
                 Continue.gameObject.SetActive(true);
                 option1Text.gameObject.transform.parent.gameObject.SetActive(false);
                 option2Text.gameObject.transform.parent.gameObject.SetActive(false);
