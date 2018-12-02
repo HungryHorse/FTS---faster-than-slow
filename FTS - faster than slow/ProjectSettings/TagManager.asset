@@ -13,6 +13,7 @@ TagManager:
   - Starmap
   - SoundPlayer
   - Continue
+  - DangerZone
   layers:
   - Default
   - TransparentFX
