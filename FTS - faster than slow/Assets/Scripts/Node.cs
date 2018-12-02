@@ -96,13 +96,13 @@ public class Node : MonoBehaviour
 
     public string GetGoodPercentage()
     {
-        string percentage = ((int)goodChance * 100) + "%";
+        string percentage = (int)(goodChance * 100) + "%";
         return percentage;
     }
 
     public string GetBadPercentage()
     {
-        string percentage = ((int)badChance * 100) + "%";
+        string percentage = (int)(badChance * 100) + "%";
         return percentage;
     }
 }
