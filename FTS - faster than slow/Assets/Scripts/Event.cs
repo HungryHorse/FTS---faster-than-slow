@@ -45,17 +45,24 @@ public class Event
         if (text != null)
         {
             voiceLines = (text.text.Split('\n'));
-            description.text = voiceLines[0];
-            option1Text.text = voiceLines[1];
-            option1Effected = voiceLines[2];
-            option1DCReward = voiceLines[3];
-            option2Text.text = voiceLines[5];
-            option2Effected = voiceLines[6];
-            option2DCReward = voiceLines[7];
+            if (voiceLines.Length > 2)
+            {
+                description.text = voiceLines[0];
+                option1Text.text = voiceLines[1];
+                option1Effected = voiceLines[2];
+                option1DCReward = voiceLines[3];
+                option2Text.text = voiceLines[5];
+                option2Effected = voiceLines[6];
+                option2DCReward = voiceLines[7];
+            }
+            else
+            {
+                description.text = voiceLines[0];
+                option1Text.text = voiceLines[1];
+                option2Text.gameObject.transform.parent.gameObject.SetActive(false);
+                return;
+            }
         }
-
-        Debug.Log(option1DCReward);
-        Debug.Log(option2DCReward);
 
         if (option1DCReward.Length > 5)
         {
