@@ -9,6 +9,8 @@ public class PopUpManager : MonoBehaviour
 
     [SerializeField]
     private GameObject description, optionOneButton, optionTwoButton, response;
+    [SerializeField]
+    private AudioClip buttonClickSound;
 
     public void UpdateLocation(Location location)
     {
@@ -22,12 +24,13 @@ public class PopUpManager : MonoBehaviour
     {
         TurnOffDesc();
         currlocation.Createresponse(true);
-
+        GameObject.FindGameObjectWithTag("SoundPlayer").GetComponent<SoundPlayer>().PlaySound(buttonClickSound);
     }
     public void onOptionTwo()
     {
         TurnOffDesc();
         currlocation.Createresponse(false);
+        GameObject.FindGameObjectWithTag("SoundPlayer").GetComponent<SoundPlayer>().PlaySound(buttonClickSound);
     }
 
     public void TurnOnDesc()
