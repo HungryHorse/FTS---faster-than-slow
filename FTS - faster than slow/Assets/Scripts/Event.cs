@@ -219,6 +219,9 @@ public class Event
                 response += "\n\nYour crew has lost " + (int)(option1DC * stats.crewNutrition) + " food.";
                 break;
 
+            case "NA\r":
+                break;
+
             default:
                 break;
         }
@@ -365,6 +368,9 @@ public class Event
             case "NU\r":
                 stats.RemoveStat("Nutrition", (int)(option2DC * stats.crewNutrition));
                 response += "\n\nYour crew has lost " + (int)(option2DC * stats.crewNutrition) + " food.";
+                break;
+
+            case "NA\r":
                 break;
 
             default:
