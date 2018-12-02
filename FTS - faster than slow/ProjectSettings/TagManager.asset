@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - StatManager
+  - Response
+  - Description
+  - Option1
+  - Option2
   layers:
   - Default
   - TransparentFX

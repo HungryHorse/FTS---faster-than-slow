@@ -30,12 +30,12 @@ public class Event
     {
         stats = GameObject.Find("Stats").GetComponent<StatManager>();
 
-        description = GameObject.Find("Description").GetComponent<Text>();
-        option1Text = GameObject.Find("Option1").GetComponent<Text>();
-        option2Text = GameObject.Find("Option2").GetComponent<Text>();
+        description = GameObject.FindGameObjectWithTag("Description").GetComponent<Text>();
+        option1Text = GameObject.FindGameObjectWithTag("Option1").GetComponent<Text>();
+        option2Text = GameObject.FindGameObjectWithTag("Option2").GetComponent<Text>();
         try
         {
-            responseText = GameObject.Find("Response").GetComponent<Text>();
+            responseText = GameObject.FindGameObjectWithTag("Response").GetComponent<Text>();
             responseText.gameObject.SetActive(false);
         }
         catch { }
@@ -67,10 +67,10 @@ public class Event
         {
             option1DC = float.Parse(option1DCReward);
         }
-        if (option2DCReward.Length > 4)
+        if (option2DCReward.Length > 5)
         {
-            option2DC = float.Parse(option2DCReward.Substring(0, 2));
-            option2Reward = float.Parse(option2DCReward.Substring(2, 2));
+            option2DC = float.Parse(option2DCReward.Substring(0, 4));
+            option2Reward = float.Parse(option2DCReward.Substring(4, 4));
             option2RewardIdentifer = voiceLines[10];
         }
         else
@@ -385,47 +385,47 @@ public class Event
         {
             case "S\r":
                 stats.AddStat("Security", (int)(option2Reward * 100));
-                text += "Your crew expands adding " + option1Reward * 100 + " talented security officers to your ranks";
+                text += "Your crew expands adding " + option2Reward * 100 + " talented security officers to your ranks";
                 break;
 
             case "M\r":
                 stats.AddStat("Medic", (int)(option2Reward * 100));
-                text += "Your crew feels much more spry now that " + option1Reward * 100 + " medical personnel have joined the ship";
+                text += "Your crew feels much more spry now that " + option2Reward * 100 + " medical personnel have joined the ship";
                 break;
 
             case "E\r":
                 stats.AddStat("Engineer", (int)(option2Reward * 100));
-                text += "Your engines aren't going to fail anytime soon with " + option1Reward * 100 + " more engineers on the ship";
+                text += "Your engines aren't going to fail anytime soon with " + option2Reward * 100 + " more engineers on the ship";
                 break;
 
             case "C\r":
                 stats.AddStat("Chef", (int)(option2Reward * 100));
-                text += "Your crew won't be going hungry with these " + option1Reward * 100 + " new gourmet chefs";
+                text += "Your crew won't be going hungry with these " + option2Reward * 100 + " new gourmet chefs";
                 break;
 
             case "N\r":
                 stats.AddStat("Navigator", (int)(option2Reward * 100));
-                text += "These " + option1Reward * 100 + " new navigators promise they won't get you lost anytime soon";
+                text += "These " + option2Reward * 100 + " new navigators promise they won't get you lost anytime soon";
                 break;
 
             case "P\r":
                 stats.AddStat("Passengers", (int)(option2Reward * 100));
-                text += "You gain " + option1Reward + " passengers";
+                text += "You gain " + option2Reward + " passengers";
                 break;
 
             case "SH\r":
                 stats.AddStat("Ship Health", (int)(option2Reward * 100));
-                text += "You manage to repair " + option1Reward * 100 + "% of your hull";
+                text += "You manage to repair " + option2Reward * 100 + "% of your hull";
                 break;
 
             case "CH\r":
                 stats.AddStat("Crew Health", (int)(option2Reward * 100));
-                text += "Your crew gains " + option1Reward * 100 + " health";
+                text += "Your crew gains " + option2Reward * 100 + " health";
                 break;
 
             case "NU\r":
                 stats.AddStat("Nutrition", (int)(option2Reward * 100));
-                text += "You manage to salvage " + option1Reward * 100 + " units of food";
+                text += "You manage to salvage " + option2Reward * 100 + " units of food";
                 break;
 
             default:
