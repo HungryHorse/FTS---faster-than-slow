@@ -159,6 +159,16 @@ public class StatManager : MonoBehaviour
         //Crew Nutrition
         crewNutrition -= (totalCrew + passengerAmount);
         crewNutrition += (chefAmount * 30);
+
+        if (crewNutrition < 0)
+        {
+            int deficit = Mathf.Abs(crewNutrition);
+            for (int i = 0; i < deficit; i++)
+            {
+                killRandomCrew();
+            }
+            crewNutrition = 0;
+        }
         //Ship Health
         shipHealth += Mathf.FloorToInt(engineerAmount / 2);
         shipHealth = Mathf.Clamp(shipHealth, 0, 100);
@@ -227,6 +237,36 @@ public class StatManager : MonoBehaviour
         passengerAmount = passengerAmount;
         WriteStats();
         CalculateStats();
+    }
+
+    void killRandomCrew()
+    {
+        int total = totalCrew + passengerAmount;
+        int rand = Random.Range(0, passengerAmount);
+        if (rand <= medicAmount)
+        {
+            RemoveStat("Medic", 1);
+        }
+        else if (rand <= medicAmount + chefAmount)
+        {
+            RemoveStat("Chef", 1);
+        }
+        else if (rand <= medicAmount + chefAmount + engineerAmount)
+        {
+            RemoveStat("Engineer", 1);
+        }
+        else if (rand <= medicAmount + chefAmount + engineerAmount + navigatorAmount)
+        {
+            RemoveStat("Navigator", 1);
+        }
+        else if (rand <= totalCrew)
+        {
+            RemoveStat("Security", 1);
+        }
+        else
+        {
+            RemoveStat("Passengers", 1);
+        }
     }
 
 
