@@ -5,5 +5,5 @@ E
 Your engineers discover a tiny leak in some pipes taking exhaust fumes from the engine to outer space. They'll try and fix it as best they can.
 Seal the area completely as fast as possible. We can't let this leak spread to more vital areas of the ship.
 P
-100
+1
 You enclose the area where the gas is leaking into. The passengers in that area were not given much time to escape and some didn't make it.

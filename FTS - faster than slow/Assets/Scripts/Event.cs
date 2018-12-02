@@ -9,10 +9,16 @@ public class Event
     public TextAsset text;
     public string[] voiceLines = new string[10];
     private float option1DC;
+    private float option1Reward;
+    private string option1DCReward;
     private string response;
     private float option2DC;
+    private float option2Reward;
+    private string option2DCReward;
     private string option1Effected;
+    private string option1RewardIdentifer;
     private string option2Effected;
+    private string option2RewardIdentifer;
     private StatManager stats;
     Text description;
     Text option1Text;
@@ -42,10 +48,34 @@ public class Event
             description.text = voiceLines[0];
             option1Text.text = voiceLines[1];
             option1Effected = voiceLines[2];
-            option1DC = float.Parse(voiceLines[3]);
+            option1DCReward = voiceLines[3];
             option2Text.text = voiceLines[5];
             option2Effected = voiceLines[6];
-            option2DC = float.Parse(voiceLines[7]);
+            option2DCReward = voiceLines[7];
+        }
+
+        Debug.Log(option1DCReward);
+        Debug.Log(option2DCReward);
+
+        if (option1DCReward.Length > 5)
+        {
+            option1DC =  float.Parse(option1DCReward.Substring(0,4));
+            option1Reward = float.Parse(option1DCReward.Substring(4, 4));
+            option1RewardIdentifer = voiceLines[9];
+        }
+        else
+        {
+            option1DC = float.Parse(option1DCReward);
+        }
+        if (option2DCReward.Length > 4)
+        {
+            option2DC = float.Parse(option2DCReward.Substring(0, 2));
+            option2Reward = float.Parse(option2DCReward.Substring(2, 2));
+            option2RewardIdentifer = voiceLines[10];
+        }
+        else
+        {
+            option2DC = float.Parse(option2DCReward);
         }
     }
 
@@ -57,6 +87,7 @@ public class Event
             {
                 responseText.text = Option1();
                 failedATest = false;
+                responseText.gameObject.SetActive(true);
             }
             catch(System.Exception ex)
             {
@@ -81,6 +112,7 @@ public class Event
             {
                 responseText.text = Option2();
                 failedATest = false;
+                responseText.gameObject.SetActive(true);
             }
             catch(System.Exception ex)
             {
@@ -115,7 +147,12 @@ public class Event
                     throw new System.Exception("\n\nAll of your crew members died attempting this task.");
                 }
                 stats.RemoveStat("Security", crewKilled);
-                response += " " + crewKilled + " members of your sercurity team died.";
+                if(option1Reward >= 0)
+                {
+                    stats.AddStat("Security", (int)option1Reward);
+                    response += "";
+                }
+                response += "\n\n" + crewKilled + " members of your sercurity team died.";
                 break;
 
             case "M\r":
@@ -126,7 +163,7 @@ public class Event
                     throw new System.Exception("\n\nAll of your crew members died attempting this task.");
                 }
                 stats.RemoveStat("Medic", crewKilled);
-                response += " " + crewKilled + " members of your medical team died.";
+                response += "\n\n" + crewKilled + " members of your medical team died.";
                 break;
 
             case "E\r":
@@ -137,7 +174,7 @@ public class Event
                     throw new System.Exception("\n\nAll of your crew members died attempting this task.");
                 }
                 stats.RemoveStat("Engineer", crewKilled);
-                response += " " + crewKilled + " members of your engineering team died.";
+                response += "\n\n" + crewKilled + " members of your engineering team died.";
                 break;
 
             case "C\r":
@@ -148,7 +185,7 @@ public class Event
                     throw new System.Exception("\n\nAll of your crew members died attempting this task.");
                 }
                 stats.RemoveStat("Chef", crewKilled);
-                response += " " + crewKilled + " members of your culinary team died.";
+                response += "\n\n" + crewKilled + " members of your culinary team died.";
                 break;
 
             case "N\r":
@@ -159,34 +196,94 @@ public class Event
                     throw new System.Exception("\n\nAll of your crew members died attempting this task.");
                 }
                 stats.RemoveStat("Navigator", crewKilled);
-                response += " " + crewKilled + " members of your navigation team died.";
+                response += "\n\n" + crewKilled + " members of your navigation team died.";
                 break;
 
             case "P\r":
                 stats.RemoveStat("Passengers", (int)(option1DC * 100));
-                response += " " + (int)(option1DC * 100) + " passengers died.";
+                response += "\n\n" + (int)(option1DC * 100) + " passengers died.";
                 break;
 
             case "SH\r":
                 stats.RemoveStat("Ship Health", (int)(option1DC * 100));
-                response += " Your ship lost " + (int)(option1DC * 100) + " health.";
+                response += "\n\nYour ship lost " + (int)(option1DC * 100) + " health.";
                 break;
 
             case "CH\r":
                 stats.RemoveStat("Crew Health", (int)(option1DC * 100));
-                response += " Your crew has lost " + (int)(option1DC * 100) + " health.";
+                response += "\n\nYour crew has lost " + (int)(option1DC * 100) + " health.";
                 break;
 
             case "NU\r":
                 stats.RemoveStat("Nutrition", (int)(option1DC * stats.crewNutrition));
-                response += " Your crew has lost " + (int)(option1DC * stats.crewNutrition) + " food.";
+                response += "\n\nYour crew has lost " + (int)(option1DC * stats.crewNutrition) + " food.";
                 break;
 
             default:
                 break;
         }
+        if (option1Reward >= 0)
+        {
+            response += Option1Reward();
+        }
         return response;
     }	
+
+    public string Option1Reward()
+    {
+        string text = "";
+        switch (option1RewardIdentifer)
+        {
+            case "S\r":
+                stats.AddStat("Security", (int)option1Reward);
+                text = "Your crew expands adding " + option1Reward + " talented security officers to your ranks";
+                break;
+
+            case "M\r":
+                stats.AddStat("Medic", (int)option1Reward);
+                text = "Your crew feels much more spry now that " + option1Reward + " medical personnel have joined the ship";
+                break;
+
+            case "E\r":
+                stats.AddStat("Engineer", (int)option1Reward);
+                text = "Your engines aren't going to fail anytime soon with " + option1Reward + " more engineers on the ship";
+                break;
+
+            case "C\r":
+                stats.AddStat("Chef", (int)option1Reward);
+                text = "Your crew expands adding " + option1Reward + " talented security officers to your ranks";
+                break;
+
+            case "N\r":
+                stats.AddStat("Navigator", (int)option1Reward);
+                text = "Your crew expands adding " + option1Reward + " talented security officers to your ranks";
+                break;
+
+            case "P\r":
+                stats.AddStat("Passengers", (int)option1Reward);
+                text = "You crew expands adding " + option1Reward + " talented security officers to your ranks";
+                break;
+
+            case "SH\r":
+                stats.AddStat("Ship Health", (int)option1Reward);
+                text = "You crew expands adding " + option1Reward + " talented security officers to your ranks";
+                break;
+
+            case "CH\r":
+                stats.AddStat("Crew Health", (int)option1Reward);
+                text = "You crew expands adding " + option1Reward + " talented security officers to your ranks";
+                break;
+
+            case "NU\r":
+                stats.AddStat("Nutrition", (int)option1Reward);
+                text = "You crew expands adding " + option1Reward + " talented security officers to your ranks";
+                break;
+
+            default:
+                break;
+        }
+        return text;
+    }
 
     public string Option2()
     {
@@ -203,7 +300,7 @@ public class Event
                     throw new System.Exception("\n\nAll of your crew members died attempting this task.");
                 }
                 stats.RemoveStat("Security", crewKilled);
-                response += " " + crewKilled + " members of your sercurity team died.";
+                response += "\n\n" + crewKilled + " members of your sercurity team died.";
                 break;
 
             case "M\r":
@@ -214,7 +311,7 @@ public class Event
                     throw new System.Exception("\n\nAll of your crew members died attempting this task.");
                 }
                 stats.RemoveStat("Medic", crewKilled);
-                response += " " + crewKilled + " members of your medical team died.";
+                response += "\n\n" + crewKilled + " members of your medical team died.";
                 break;
 
             case "E\r":
@@ -225,7 +322,7 @@ public class Event
                     throw new System.Exception("\n\nAll of your crew members died attempting this task.");
                 }
                 stats.RemoveStat("Engineer", crewKilled);
-                response += " " + crewKilled + " members of your engineering team died.";
+                response += "\n\n" + crewKilled + " members of your engineering team died.";
                 break;
 
             case "C\r":
@@ -236,7 +333,7 @@ public class Event
                     throw new System.Exception("\n\nAll of your crew members died attempting this task.");
                 }
                 stats.RemoveStat("Chef", crewKilled);
-                response += " " + crewKilled + " members of your culinary team died.";
+                response += "\n\n" + crewKilled + " members of your culinary team died.";
                 break;
 
             case "N\r":
@@ -247,34 +344,85 @@ public class Event
                     throw new System.Exception("\n\nAll of your crew members died attempting this task.");
                 }
                 stats.RemoveStat("Navigator", crewKilled);
-                response += " " + crewKilled + " members of your navigation team died.";
+                response += "\n\n" + crewKilled + " members of your navigation team died.";
                 break;
 
             case "P\r":
                 stats.RemoveStat("Passengers", (int)option2DC);
-                response += " Your crew has lost " + (int)(option2DC * 100) + " food.";
+                response += "\n\nYour crew has lost " + (int)(option2DC * 100) + " food.";
                 break;
 
             case "SH\r":
                 stats.RemoveStat("Ship Health", (int)option2DC);
-                response += " Your crew has lost " + (int)(option2DC * 100) + " food.";
+                response += "\n\nYour crew has lost " + (int)(option2DC * 100) + " food.";
                 break;
 
             case "CH\r":
                 stats.RemoveStat("Crew Health", (int)option2DC);
-                response += " Your crew has lost " + (int)(option2DC * 100) + " food.";
+                response += "\n\nYour crew has lost " + (int)(option2DC * 100) + " food.";
                 break;
 
             case "NU\r":
                 stats.RemoveStat("Nutrition", (int)(option2DC * stats.crewNutrition));
-                response += " Your crew has lost " + (int)(option2DC * stats.crewNutrition) + " food.";
+                response += "\n\nYour crew has lost " + (int)(option2DC * stats.crewNutrition) + " food.";
                 break;
 
             default:
                 break;
         }
+        if (option2Reward >= 0)
+        {
+            response += Option2Reward();
+        }
         return response;
 
+    }
+
+    public string Option2Reward()
+    {
+        string text = "";
+        switch (option2RewardIdentifer)
+        {
+            case "S\r":
+                stats.AddStat("Security", (int)option2Reward);
+                break;
+
+            case "M\r":
+                stats.AddStat("Medic", (int)option2Reward);
+                break;
+
+            case "E\r":
+                stats.AddStat("Engineer", (int)option2Reward);
+                break;
+
+            case "C\r":
+                stats.AddStat("Chef", (int)option2Reward);
+                break;
+
+            case "N\r":
+                stats.AddStat("Navigator", (int)option2Reward);
+                break;
+
+            case "P\r":
+                stats.AddStat("Passengers", (int)option2Reward);
+                break;
+
+            case "SH\r":
+                stats.AddStat("Ship Health", (int)option2Reward);
+                break;
+
+            case "CH\r":
+                stats.AddStat("Crew Health", (int)option2Reward);
+                break;
+
+            case "NU\r":
+                stats.AddStat("Nutrition", (int)option2Reward);
+                break;
+
+            default:
+                break;
+        }
+        return text;
     }
 
     private int CalculateCrewLoss(int crewNum, float DC)
@@ -321,7 +469,7 @@ public class Event
 
     private bool doDCCheck(float DC)
     {
-        int rand = Random.Range(0, 1);
+        float rand = Random.Range(0f, 1f);
 
         if (rand >= DC)
         {

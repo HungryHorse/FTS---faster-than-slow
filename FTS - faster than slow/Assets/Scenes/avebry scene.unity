@@ -7668,18 +7668,18 @@ MonoBehaviour:
   StartingHealth: 100
   StartingNutrition: 100
   StartingShipHealth: 100
-  crewHealth: 0
-  crewNutrition: 0
-  navigationPoints: 0
-  shipHealth: 0
-  enginePower: 0
-  totalCrew: 0
-  medicAmount: 5
-  chefAmount: 5
-  engineerAmount: 5
-  navigatorAmount: 5
-  securityAmount: 5
-  passengerAmount: 10
+  crewHealth: 100
+  crewNutrition: 100
+  navigationPoints: 100
+  shipHealth: 100
+  enginePower: 100
+  totalCrew: 100
+  medicAmount: 100
+  chefAmount: 100
+  engineerAmount: 100
+  navigatorAmount: 100
+  securityAmount: 100
+  passengerAmount: 100
 --- !u!4 &1013589995
 Transform:
   m_ObjectHideFlags: 0

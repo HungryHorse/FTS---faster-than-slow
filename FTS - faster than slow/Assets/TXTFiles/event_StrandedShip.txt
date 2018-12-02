@@ -1,7 +1,7 @@
 You follow a distress beacon to a ship stranded far away from civilisation. The captain hails you and requests a meeting. They explain that they are out of food and their crew is dying.
 Offer them some food
 NU
-10
+0.1
 The stranded captain is very thankful and offers to repair your ship for your gracious act. They have some very handy engineers on board.
 Decline the offer - you have none to spare
 NU 
