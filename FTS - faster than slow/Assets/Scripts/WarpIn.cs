@@ -10,7 +10,12 @@ public class WarpIn : MonoBehaviour {
     private void Awake()
     {
         GetComponent<Animator>().Play("WarpIn");
-        GameObject.FindGameObjectWithTag("SoundPlayer").GetComponent<SoundPlayer>().PlaySound(warpSound);
+        
+    }
+
+    void Start()
+    {
+        GameObject.FindGameObjectWithTag("SoundPlayer").GetComponent<AudioSource>().PlayOneShot(warpSound);
     }
 
     public void WarpedIn()

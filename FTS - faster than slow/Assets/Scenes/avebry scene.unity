@@ -4246,6 +4246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spaceship: {fileID: 372406042}
+  warpSound: {fileID: 8300000, guid: 84523599ff78dbb44b9ccabd37acb160, type: 3}
 --- !u!114 &372406042
 MonoBehaviour:
   m_ObjectHideFlags: 0
