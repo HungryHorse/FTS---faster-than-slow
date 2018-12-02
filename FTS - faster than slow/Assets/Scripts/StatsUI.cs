@@ -41,7 +41,7 @@ public class StatsUI : MonoBehaviour {
 
     public void UpdateUI()
     {
-        totalCrew.text = stats.totalCrew.ToString();
+        totalCrew.text = (stats.totalCrew + stats.passengerAmount).ToString();
         passengers.text = stats.passengerAmount.ToString();
         medic.text = stats.medicAmount.ToString();
         chef.text = stats.chefAmount.ToString();

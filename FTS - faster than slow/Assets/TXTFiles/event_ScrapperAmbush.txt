@@ -5,5 +5,5 @@ S
 You send a small force of security to repel the attackers. They manage to remove the claws from your hull but it's tricky.
 Try to steer the ship and pull away
 SH
-30
+0.3
 You steer the ship away from the claws, cutting a gash into your hull.
