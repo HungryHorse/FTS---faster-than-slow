@@ -30,11 +30,12 @@ public class Event
     {
         stats = GameObject.Find("Stats").GetComponent<StatManager>();
 
-        description = GameObject.FindGameObjectWithTag("Description").GetComponent<Text>();
-        option1Text = GameObject.FindGameObjectWithTag("Option1").GetComponent<Text>();
-        option2Text = GameObject.FindGameObjectWithTag("Option2").GetComponent<Text>();
         try
         {
+            description = GameObject.FindGameObjectWithTag("Description").GetComponent<Text>();
+            option1Text = GameObject.FindGameObjectWithTag("Option1").GetComponent<Text>();
+            option2Text = GameObject.FindGameObjectWithTag("Option2").GetComponent<Text>();
+
             responseText = GameObject.FindGameObjectWithTag("Response").GetComponent<Text>();
             responseText.gameObject.SetActive(false);
         }
@@ -142,8 +143,17 @@ public class Event
 
     public string Option1()
     {
-        response = voiceLines[4];
+        
         int crewKilled = 0;
+        if(option1Effected == null)
+        {
+            option1Effected = "";
+            response = "";
+        }
+        else
+        {
+            response = voiceLines[4];
+        }
         switch (option1Effected)
         {
             case "S\r":
