@@ -67,10 +67,10 @@ public class Event
         {
             option1DC = float.Parse(option1DCReward);
         }
-        if (option2DCReward.Length > 4)
+        if (option2DCReward.Length > 5)
         {
-            option2DC = float.Parse(option2DCReward.Substring(0, 2));
-            option2Reward = float.Parse(option2DCReward.Substring(2, 2));
+            option2DC = float.Parse(option2DCReward.Substring(0, 4));
+            option2Reward = float.Parse(option2DCReward.Substring(4, 4));
             option2RewardIdentifer = voiceLines[10];
         }
         else
