@@ -1,0 +1,8 @@
+You come accross a space station that looks battle torn and silent. The airlock looks intact.
+Send a team of medics to investigate and look for survivors.
+M
+0.600.15
+Send in the security to assess the situation. 
+S
+0.6
+P
