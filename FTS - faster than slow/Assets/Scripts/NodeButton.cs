@@ -35,7 +35,11 @@ public class NodeButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 
     public void SetLineToNull()
     {
-        line.SetVertexCount(0);
+        try
+        {
+            line.SetVertexCount(0);
+        }
+        catch { }
     }
 
     void OnDisable()
