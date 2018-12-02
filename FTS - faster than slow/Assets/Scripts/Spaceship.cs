@@ -13,6 +13,11 @@ public class Spaceship : MonoBehaviour {
     {
         currNode = node;
         transform.position = currNode.gameObject.transform.position;
+        Invoke("DelayedUpdate", 1.5f);
+    }
+
+    void DelayedUpdate()
+    {
         locationForShip.location = currNode.location;
         locationForShip.warp.WarpInAnimation();
         locationForShip.location.EnterLocation();
@@ -25,7 +30,7 @@ public class Spaceship : MonoBehaviour {
         if (col.gameObject.tag == "DangerZone")
         {
             Debug.Log("Caught by the dong");
-
+            GameObject.Find("GameOver").GetComponent<GameOver>().gameOver();
         }
     }
 }
