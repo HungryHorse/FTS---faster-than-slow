@@ -14,27 +14,33 @@ public class PopUpManager : MonoBehaviour
     {
 
         response.SetActive(true);
-
+        TurnOnDesc();
 
         currlocation = location;
     }
     public void onOptionOne()
     {
-        ToggleDescAndButtons();
+        TurnOffDesc();
         currlocation.Createresponse(true);
 
     }
     public void onOptionTwo()
     {
-        ToggleDescAndButtons();
+        TurnOffDesc();
         currlocation.Createresponse(false);
     }
 
-    public void ToggleDescAndButtons()
+    public void TurnOnDesc()
     {
-        response.SetActive(!response.activeInHierarchy);
-        description.SetActive(!description.activeInHierarchy);
-        optionOneButton.SetActive(!optionOneButton.activeInHierarchy);
-        optionTwoButton.SetActive(!optionTwoButton.activeInHierarchy);
+        description.SetActive(true);
+        optionOneButton.SetActive(true);
+        optionTwoButton.SetActive(true);
+    }
+
+    public void TurnOffDesc()
+    {
+        description.SetActive(false);
+        optionOneButton.SetActive(false);
+        optionTwoButton.SetActive(false);
     }
 }

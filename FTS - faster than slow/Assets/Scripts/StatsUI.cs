@@ -31,6 +31,7 @@ public class StatsUI : MonoBehaviour {
     void Awake()
     {
         stats = GetComponent<StatManager>();
+        stats.ResetValues();
     }
 	
 	// Update is called once per frame

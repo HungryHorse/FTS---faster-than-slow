@@ -7679,7 +7679,7 @@ MonoBehaviour:
   engineerAmount: 5
   navigatorAmount: 5
   securityAmount: 5
-  passengerAmount: 0
+  passengerAmount: 10
 --- !u!4 &1013589995
 Transform:
   m_ObjectHideFlags: 0
