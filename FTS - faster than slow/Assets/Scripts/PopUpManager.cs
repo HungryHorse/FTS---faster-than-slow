@@ -6,6 +6,7 @@ public class PopUpManager : MonoBehaviour
 {
     public WarpIn warp;
     public Location currlocation;
+    public GameObject EventUI;
 
     [SerializeField]
     private GameObject description, optionOneButton, optionTwoButton, response, Continue;
@@ -18,6 +19,7 @@ public class PopUpManager : MonoBehaviour
         response.SetActive(true);
         Continue.SetActive(true);
         TurnOnDesc();
+        EventUI.SetActive(true);
 
         currlocation = location;
     }
@@ -37,6 +39,8 @@ public class PopUpManager : MonoBehaviour
     {
         warp.WarpOutAnimation();
         TurnOffAll();
+        TurnOnDesc();
+        EventUI.SetActive(false);
     }
 
     public void TurnOnDesc()

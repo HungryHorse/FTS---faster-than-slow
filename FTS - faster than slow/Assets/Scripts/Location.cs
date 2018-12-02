@@ -15,14 +15,12 @@ public class Location : MonoBehaviour
 
     private void Awake()
     {
-
         background = GameObject.FindGameObjectWithTag("Background").GetComponent<Image>();
         eventUI = GameObject.Find("EventUI");
     }
 
     private void Start()
     {
-        eventUI.SetActive(false);
     }
 
     public void EnterLocation()

@@ -31,18 +31,14 @@ public class Event
     {
         stats = GameObject.Find("Stats").GetComponent<StatManager>();
 
-        try
-        {
-            description = GameObject.FindGameObjectWithTag("Description").GetComponent<Text>();
-            option1Text = GameObject.FindGameObjectWithTag("Option1").GetComponent<Text>();
-            option2Text = GameObject.FindGameObjectWithTag("Option2").GetComponent<Text>();
+        description = GameObject.FindGameObjectWithTag("Description").GetComponent<Text>();
+        option1Text = GameObject.FindGameObjectWithTag("Option1").GetComponent<Text>();
+        option2Text = GameObject.FindGameObjectWithTag("Option2").GetComponent<Text>();
 
-            Continue = GameObject.FindGameObjectWithTag("Continue");
-            responseText = GameObject.FindGameObjectWithTag("Response").GetComponent<Text>();
-            responseText.gameObject.SetActive(false);
-            Continue.gameObject.SetActive(false);
-        }
-        catch { }
+        Continue = GameObject.FindGameObjectWithTag("Continue");
+        responseText = GameObject.FindGameObjectWithTag("Response").GetComponent<Text>();
+        responseText.gameObject.SetActive(false);
+        Continue.gameObject.SetActive(false);
 
         
 

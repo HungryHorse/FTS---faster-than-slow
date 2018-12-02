@@ -7316,6 +7316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   warp: {fileID: 372406041}
   currlocation: {fileID: 0}
+  EventUI: {fileID: 435920268}
   description: {fileID: 1572488918}
   optionOneButton: {fileID: 1745621114}
   optionTwoButton: {fileID: 360900015}
