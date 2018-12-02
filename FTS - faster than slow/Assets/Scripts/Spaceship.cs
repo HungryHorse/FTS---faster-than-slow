@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Spaceship : MonoBehaviour {
+public class Spaceship : MonoBehaviour
+{
     public Node currNode;
     public LocationForShipInWorld locationForShip;
     public StarMapmanager starmapManager;
@@ -16,26 +17,34 @@ public class Spaceship : MonoBehaviour {
 
     public void PositionUpdate(Node node, bool first)
     {
-        if (canMove)
+
+        
+        
+        if (first)
         {
-            canMove = false;
             currNode = node;
             transform.position = currNode.gameObject.transform.position;
-            if (first)
-            {
-                locationForShip.location = currNode.location;
-                locationForShip.warp.WarpInAnimation();
-                locationForShip.location.EnterLocation();
+            locationForShip.location = currNode.location;
+            locationForShip.warp.WarpInAnimation();
+            locationForShip.location.EnterLocation();
 
-                starmapManager.TurnStarmapsOff();
-            }
-            else
-            {
-                Invoke("DelayedUpdate", 1.5f);
-
-            }
+            starmapManager.TurnStarmapsOff();
         }
-        
+        else
+        {
+            if (canMove)
+            {
+                canMove = false;
+
+                currNode = node;
+                transform.position = currNode.gameObject.transform.position;
+                Invoke("DelayedUpdate", 1.5f);
+            }
+            
+
+        }
+
+
     }
 
     void DelayedUpdate()
