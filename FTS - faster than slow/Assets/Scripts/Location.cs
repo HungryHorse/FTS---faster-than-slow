@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Location : MonoBehaviour
 {
-    public static GameObject eventUI;
     public int eventIndex;
     public bool isGood;
     public Event[] goodEvents;
@@ -16,7 +15,6 @@ public class Location : MonoBehaviour
     private void Awake()
     {
         background = GameObject.FindGameObjectWithTag("Background").GetComponent<Image>();
-        eventUI = GameObject.Find("EventUI");
     }
 
     private void Start()
@@ -30,7 +28,6 @@ public class Location : MonoBehaviour
 
     public void EventText()
     {
-        eventUI.SetActive(true);
         if (isGood)
         {
             eventIndex = Random.Range(0, goodEvents.Length);

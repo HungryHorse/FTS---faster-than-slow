@@ -28,7 +28,7 @@ public class WarpIn : MonoBehaviour {
 
     public void WarpedIn()
     {
-        spaceship.location.EventText();
+        spaceship.EventSpawn();
         GetComponent<Animator>().Play("IdleAnimation");
     }
 

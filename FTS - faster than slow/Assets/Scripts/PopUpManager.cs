@@ -15,11 +15,14 @@ public class PopUpManager : MonoBehaviour
 
     public void UpdateLocation(Location location)
     {
+        EventUI.SetActive(true);
         response.SetActive(true);
         Continue.SetActive(true);
         TurnOnDesc();
 
         currlocation = location;
+
+        warp.spaceship.doEvent();
     }
     public void onOptionOne()
     {

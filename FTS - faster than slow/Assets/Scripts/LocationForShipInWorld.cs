@@ -29,6 +29,9 @@ public class LocationForShipInWorld : MonoBehaviour
     public void EventSpawn()
     {
         popUpManager.UpdateLocation(location);
+    }
+    public void doEvent()
+    {
         location.EventText();
     }
 
