@@ -6,7 +6,8 @@ public class WarpIn : MonoBehaviour {
 
     public LocationForShipInWorld spaceship;
     public StarMapmanager starmapManager;
-    public AudioClip warpSound;
+    public AudioClip warpInSound;
+    public AudioClip warpOutSound;
 
     private void Awake()
     {
@@ -16,12 +17,13 @@ public class WarpIn : MonoBehaviour {
 
     void Start()
     {
-        GameObject.FindGameObjectWithTag("SoundPlayer").GetComponent<AudioSource>().PlayOneShot(warpSound);
+        
     }
 
     public void WarpInAnimation()
     {
         GetComponent<Animator>().Play("WarpIn");
+        GameObject.FindGameObjectWithTag("SoundPlayer").GetComponent<AudioSource>().PlayOneShot(warpInSound);
     }
 
     public void WarpedIn()
@@ -33,6 +35,7 @@ public class WarpIn : MonoBehaviour {
     public void WarpOutAnimation()
     {
         GetComponent<Animator>().Play("WarpOut");
+        GameObject.FindGameObjectWithTag("SoundPlayer").GetComponent<SoundPlayer>().PlaySound(warpOutSound);
     }
 
     public void WarpedOut()
