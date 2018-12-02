@@ -21,11 +21,11 @@ public class ToolTip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         currentToolTip = Instantiate(tooltipObject, canvas.transform);
         if (castOnLeft)
         {
-            currentToolTip.transform.position = new Vector3(gameObject.transform.position.x - (Screen.width * 0.4f), gameObject.transform.position.y - Screen.height * 0.4f);
+            currentToolTip.transform.position = new Vector3(gameObject.transform.position.x - 1f, gameObject.transform.position.y - 2f);
         }
         else
         {
-            currentToolTip.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - 2f);
+            currentToolTip.transform.position = new Vector3(gameObject.transform.position.x + 1f, gameObject.transform.position.y - 2f);
         }
 
         currentToolTip.transform.GetChild(1).GetComponent<Text>().text = toolTipDescription;

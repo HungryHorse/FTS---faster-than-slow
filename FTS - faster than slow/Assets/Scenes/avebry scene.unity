@@ -304,7 +304,7 @@ MonoBehaviour:
   canvas: {fileID: 722185209}
   toolTipDescription: Produces Food
   toolTipTitle: Chef
-  castOnLeft: 0
+  castOnLeft: 1
 --- !u!1 &37376494
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,7 +2521,7 @@ MonoBehaviour:
   canvas: {fileID: 722185209}
   toolTipDescription: Solves Conflicts
   toolTipTitle: Security
-  castOnLeft: 0
+  castOnLeft: 1
 --- !u!1 &408521940
 GameObject:
   m_ObjectHideFlags: 0
@@ -7435,7 +7435,7 @@ MonoBehaviour:
   canvas: {fileID: 722185209}
   toolTipDescription: Restores Ship Health
   toolTipTitle: Engineer
-  castOnLeft: 0
+  castOnLeft: 1
 --- !u!1 &980877693
 GameObject:
   m_ObjectHideFlags: 0
@@ -8544,7 +8544,7 @@ Prefab:
     - target: {fileID: 224280052123419990, guid: ad443d45fc5bddd42aafad19f3a8017b,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.56422424
+      value: -0.5641937
       objectReference: {fileID: 0}
     - target: {fileID: 223269215307446026, guid: ad443d45fc5bddd42aafad19f3a8017b,
         type: 2}
@@ -12234,7 +12234,7 @@ GameObject:
   m_PrefabParentObject: {fileID: 1304241609501978, guid: ad443d45fc5bddd42aafad19f3a8017b,
     type: 2}
   m_PrefabInternal: {fileID: 1069968763}
---- !u!114 &1687737566
+--- !u!114 &1687737569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -12913,7 +12913,7 @@ MonoBehaviour:
   canvas: {fileID: 722185209}
   toolTipDescription: Scores points at the end of the game
   toolTipTitle: Passenger
-  castOnLeft: 0
+  castOnLeft: 1
 --- !u!1 &1840668727
 GameObject:
   m_ObjectHideFlags: 0
@@ -14209,7 +14209,7 @@ MonoBehaviour:
   canvas: {fileID: 722185209}
   toolTipDescription: Restores Crew Health
   toolTipTitle: Medic
-  castOnLeft: 0
+  castOnLeft: 1
 --- !u!1 &1952250388
 GameObject:
   m_ObjectHideFlags: 0
@@ -15230,7 +15230,7 @@ MonoBehaviour:
   canvas: {fileID: 722185209}
   toolTipDescription: Scans Upcoming Nodes
   toolTipTitle: Navigator
-  castOnLeft: 0
+  castOnLeft: 1
 --- !u!1 &2126469436
 GameObject:
   m_ObjectHideFlags: 0
@@ -15304,7 +15304,7 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000010234085288, guid: ad443d45fc5bddd42aafad19f3a8017b,
     type: 2}
   m_PrefabInternal: {fileID: 1069968763}
---- !u!114 &2132466976
+--- !u!114 &2132466979
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
