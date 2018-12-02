@@ -15,11 +15,9 @@ public class PopUpManager : MonoBehaviour
 
     public void UpdateLocation(Location location)
     {
-
         response.SetActive(true);
         Continue.SetActive(true);
         TurnOnDesc();
-        EventUI.SetActive(true);
 
         currlocation = location;
     }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Location : MonoBehaviour
 {
-    public GameObject eventUI;
+    public static GameObject eventUI;
     public int eventIndex;
     public bool isGood;
     public Event[] goodEvents;
