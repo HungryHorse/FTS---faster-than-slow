@@ -14,8 +14,7 @@ public class Spaceship : MonoBehaviour {
         currNode = node;
         transform.position = currNode.gameObject.transform.position;
         locationForShip.location = currNode.location;
-        locationForShip.EventSpawn();
-
+        locationForShip.warp.WarpInAnimation();
         locationForShip.location.EnterLocation();
 
         starmapManager.TurnStarmapsOff();

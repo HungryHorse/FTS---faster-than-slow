@@ -6,6 +6,7 @@ public class LocationForShipInWorld : MonoBehaviour
 {
     public Location location;
     public PopUpManager popUpManager;
+    public WarpIn warp;
 
     public GameObject[] starmaps;
 

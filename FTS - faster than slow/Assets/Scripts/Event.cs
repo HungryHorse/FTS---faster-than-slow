@@ -20,7 +20,7 @@ public class Event
     private string option2Effected;
     private string option2RewardIdentifer;
     private StatManager stats;
-    GameObject Continue;
+    static GameObject Continue;
     Text description;
     Text option1Text;
     Text option2Text;
@@ -101,7 +101,7 @@ public class Event
                 responseText.text = Option1();
                 failedATest = false;
                 responseText.gameObject.SetActive(true);
-                Continue.gameObject.SetActive(true);
+                Continue.SetActive(true);
             }
             catch(System.Exception ex)
             {
@@ -127,7 +127,7 @@ public class Event
                 responseText.text = Option2();
                 failedATest = false;
                 responseText.gameObject.SetActive(true);
-                Continue.gameObject.SetActive(true);
+                Continue.SetActive(true);
             }
             catch(System.Exception ex)
             {

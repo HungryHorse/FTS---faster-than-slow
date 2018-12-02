@@ -29,7 +29,6 @@ public class Node : MonoBehaviour
             location = Instantiate(locationArray[rand]);
 
         }
-
         if (first)
         {
             location = Instantiate(location);

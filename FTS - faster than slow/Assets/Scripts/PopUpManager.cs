@@ -16,6 +16,7 @@ public class PopUpManager : MonoBehaviour
     {
 
         response.SetActive(true);
+        Continue.SetActive(true);
         TurnOnDesc();
 
         currlocation = location;

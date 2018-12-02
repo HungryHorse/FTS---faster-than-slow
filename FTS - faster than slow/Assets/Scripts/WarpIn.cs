@@ -38,6 +38,5 @@ public class WarpIn : MonoBehaviour {
     public void WarpedOut()
     {
         starmapManager.TurnStarmapsOn();
-        Debug.Log("HI");
     }
 }
