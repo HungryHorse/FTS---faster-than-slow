@@ -55,10 +55,10 @@ MonoBehaviour:
   eventIndex: 0
   isGood: 0
   goodEvents:
-  - text: {fileID: 4900000, guid: 7a13805f46175e541b1cb76082b4b97a, type: 3}
+  - text: {fileID: 4900000, guid: 7c8245ed64c03534f957b73ac2a5faeb, type: 3}
     voiceLines: []
   badEvents:
-  - text: {fileID: 4900000, guid: 7a13805f46175e541b1cb76082b4b97a, type: 3}
+  - text: {fileID: 4900000, guid: 7c8245ed64c03534f957b73ac2a5faeb, type: 3}
     voiceLines: []
   backgroundSprite: {fileID: 21300000, guid: 79a0bfc7a60e37f43b5857d94a604a09, type: 3}
   background: {fileID: 0}
