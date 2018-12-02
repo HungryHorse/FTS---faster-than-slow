@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Location : MonoBehaviour
 {
@@ -8,6 +9,19 @@ public class Location : MonoBehaviour
     public bool isGood;
     public Event[] goodEvents;
     public Event[] badEvents;
+    public Sprite backgroundSprite;
+    public Image background;
+
+
+    private void Awake()
+    {
+        background = GameObject.FindGameObjectWithTag("Background").GetComponent<Image>();
+    }
+
+    public void EnterLocation()
+    {
+        background.sprite = backgroundSprite;
+    }
 
     public void EventText()
     {

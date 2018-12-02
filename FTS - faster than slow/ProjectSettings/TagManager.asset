@@ -9,6 +9,7 @@ TagManager:
   - Description
   - Option1
   - Option2
+  - Background
   layers:
   - Default
   - TransparentFX
