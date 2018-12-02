@@ -113,90 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &11623593
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 11623596}
-  - component: {fileID: 11623595}
-  - component: {fileID: 11623594}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &11623594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 11623593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &11623595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 11623593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &11623596
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 11623593}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &343302760 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1388533197766354, guid: ad443d45fc5bddd42aafad19f3a8017b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1953592057}
---- !u!114 &343302762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 343302760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af926682f1e9ce44c93c3a339f8375a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tooltipObject: {fileID: 1153064267965500, guid: d7764efb05a1dd44cb72a231a22f9834,
-    type: 2}
-  canvas: {fileID: 1875945192}
-  toolTipDescription: Scores points at the end of the game
-  toolTipTitle: Passenger
-  castOnLeft: 0
 --- !u!1 &1598816916
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,11 +194,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!223 &1875945192 stripped
-Canvas:
-  m_PrefabParentObject: {fileID: 223269215307446026, guid: ad443d45fc5bddd42aafad19f3a8017b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1953592057}
 --- !u!1001 &1953592057
 Prefab:
   m_ObjectHideFlags: 0
@@ -408,7 +319,7 @@ Prefab:
     - target: {fileID: 224280052123419990, guid: ad443d45fc5bddd42aafad19f3a8017b,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.5640106
+      value: -0.5642853
       objectReference: {fileID: 0}
     - target: {fileID: 224988740196425444, guid: ad443d45fc5bddd42aafad19f3a8017b,
         type: 2}
@@ -944,26 +855,6 @@ Prefab:
         type: 2}
       propertyPath: m_AnchoredPosition.x
       value: -4.9999847
-      objectReference: {fileID: 0}
-    - target: {fileID: 224280052123419990, guid: ad443d45fc5bddd42aafad19f3a8017b,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 224953417912917470, guid: ad443d45fc5bddd42aafad19f3a8017b,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -2.9974365
-      objectReference: {fileID: 0}
-    - target: {fileID: 224992331517926852, guid: ad443d45fc5bddd42aafad19f3a8017b,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -2.9974365
-      objectReference: {fileID: 0}
-    - target: {fileID: 224018966686761666, guid: ad443d45fc5bddd42aafad19f3a8017b,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad443d45fc5bddd42aafad19f3a8017b, type: 2}
