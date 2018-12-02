@@ -1,1 +1,9 @@
-As you come across
+As you come across a deserted and dusty looking planet, your scans show a settlement on the surface with a lot of organic material.
+Send your chefs to check if it is edible
+C
+0.200.10
+Send security in case it is sentient
+S
+0.200.10
+CN
+CN
