@@ -34,7 +34,7 @@ public class Node : MonoBehaviour
         if (first)
         {
             location = Instantiate(location);
-            ship.PositionUpdate(this);
+            ship.PositionUpdate(this, true);
         }
     }    
 
@@ -50,7 +50,8 @@ public class Node : MonoBehaviour
                     location.isGood = true;
                 }
                 GameObject.FindGameObjectWithTag("DangerZone").GetComponent<DangerZone>().UpdatePosition(distance);
-                ship.PositionUpdate(this);
+                GameObject.FindGameObjectWithTag("StatManager").GetComponent<StatManager>().NextTurn();
+                ship.PositionUpdate(this, false);
                 
             }
         }

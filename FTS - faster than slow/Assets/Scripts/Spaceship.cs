@@ -9,11 +9,23 @@ public class Spaceship : MonoBehaviour {
     public StarMapmanager starmapManager;
     
 
-    public void PositionUpdate(Node node)
+    public void PositionUpdate(Node node, bool first)
     {
         currNode = node;
         transform.position = currNode.gameObject.transform.position;
-        Invoke("DelayedUpdate", 1.5f);
+        if (first)
+        {
+            locationForShip.location = currNode.location;
+            locationForShip.warp.WarpInAnimation();
+            locationForShip.location.EnterLocation();
+
+            starmapManager.TurnStarmapsOff();
+        }
+        else
+        {
+            Invoke("DelayedUpdate", 1.5f);
+
+        }
     }
 
     void DelayedUpdate()
