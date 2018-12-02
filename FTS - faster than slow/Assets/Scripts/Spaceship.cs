@@ -7,25 +7,35 @@ public class Spaceship : MonoBehaviour {
     public Node currNode;
     public LocationForShipInWorld locationForShip;
     public StarMapmanager starmapManager;
-    
+    public bool canMove;
+
+    private void Start()
+    {
+        canMove = true;
+    }
 
     public void PositionUpdate(Node node, bool first)
     {
-        currNode = node;
-        transform.position = currNode.gameObject.transform.position;
-        if (first)
+        if (canMove)
         {
-            locationForShip.location = currNode.location;
-            locationForShip.warp.WarpInAnimation();
-            locationForShip.location.EnterLocation();
+            canMove = false;
+            currNode = node;
+            transform.position = currNode.gameObject.transform.position;
+            if (first)
+            {
+                locationForShip.location = currNode.location;
+                locationForShip.warp.WarpInAnimation();
+                locationForShip.location.EnterLocation();
 
-            starmapManager.TurnStarmapsOff();
-        }
-        else
-        {
-            Invoke("DelayedUpdate", 1.5f);
+                starmapManager.TurnStarmapsOff();
+            }
+            else
+            {
+                Invoke("DelayedUpdate", 1.5f);
 
+            }
         }
+        
     }
 
     void DelayedUpdate()
@@ -33,7 +43,7 @@ public class Spaceship : MonoBehaviour {
         locationForShip.location = currNode.location;
         locationForShip.warp.WarpInAnimation();
         locationForShip.location.EnterLocation();
-
+        canMove = true;
         starmapManager.TurnStarmapsOff();
     }
 

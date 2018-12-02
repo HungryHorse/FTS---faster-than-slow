@@ -14,7 +14,6 @@ public class Node : MonoBehaviour
     public float badChance;
     public int distance;
     public StatManager stat;
-
     [SerializeField]
     private StarMapmanager starmapManager;
 
