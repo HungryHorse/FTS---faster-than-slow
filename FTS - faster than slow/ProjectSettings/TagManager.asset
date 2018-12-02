@@ -10,6 +10,7 @@ TagManager:
   - Option1
   - Option2
   - Background
+  - Starmap
   layers:
   - Default
   - TransparentFX

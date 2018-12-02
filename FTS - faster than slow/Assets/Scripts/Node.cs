@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Node : MonoBehaviour
 {
+    public bool first;
     public Location location;
     public Location[] locationArray;
     public Node[] prevNodes;
@@ -12,14 +13,29 @@ public class Node : MonoBehaviour
     public float goodChance;
     public float badChance;
     public StatManager stat;
+    public GameObject physicalShip;
+    public GameObject[] starmaps;
 
-    private void Start()
+    private void Awake()
     {
         stat = GameObject.FindGameObjectWithTag("StatManager").GetComponent<StatManager>();
         goodChance = Random.Range(0, 0.35f);
         badChance = 1 - goodChance;
         int rand = Random.Range(0, locationArray.Length);
         location = Instantiate(locationArray[rand]);
+
+        if (first)
+        {
+            Debug.Log("HI");
+            ship.PositionUpdate(this);
+        }
+    }
+
+    private void Start()
+    {
+        starmaps = GameObject.FindGameObjectsWithTag("Starmap");
+        starmaps[0].SetActive(false);
+        starmaps[1].SetActive(false);
     }
 
     public void NextNode()
@@ -34,6 +50,8 @@ public class Node : MonoBehaviour
                     location.isGood = true;
                 }
                 ship.PositionUpdate(this);
+                starmaps[0].SetActive(false);
+                starmaps[1].SetActive(false);
             }
         }
     }
