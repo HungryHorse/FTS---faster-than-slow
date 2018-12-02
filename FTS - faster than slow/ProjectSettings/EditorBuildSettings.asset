@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/avebry scene.unity
     guid: 40e2a939c84574b4cacbbc6edf969eff
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: cf0cf0b20117afa4c812a41ae7e65f76
   m_configObjects: {}
