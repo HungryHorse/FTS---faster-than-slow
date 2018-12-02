@@ -2,8 +2,10 @@ As you travel cautiously through the broken rock and wreckage, your navigators i
 See if they have the capability to repair some of your ship.
 NA
 0.000.20
+They have many repair stations in this area that can service your ship brilliantly.
 Ask them if they have any engineers who would like to work on your ship
 NA
 0.000.20
+They have a few engineers that are looking for a bit more excitment than this mining outpost has to offer. Your ship seems to be what they were looking for.
 SH
 E
