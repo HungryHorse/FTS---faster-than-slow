@@ -48,9 +48,13 @@ public class Node : MonoBehaviour
                 {
                     location.isGood = true;
                 }
-                GameObject.FindGameObjectWithTag("DangerZone").GetComponent<DangerZone>().UpdatePosition(distance);
-                GameObject.FindGameObjectWithTag("StatManager").GetComponent<StatManager>().NextTurn();
-                ship.PositionUpdate(this, false);
+                if (ship.canMove)
+                {
+                    GameObject.FindGameObjectWithTag("DangerZone").GetComponent<DangerZone>().UpdatePosition(distance);
+                    GameObject.FindGameObjectWithTag("StatManager").GetComponent<StatManager>().NextTurn();
+                    ship.PositionUpdate(this, false);
+                }
+                
                 
             }
         }
