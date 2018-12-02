@@ -1,0 +1,9 @@
+As you travel cautiously through the broken rock and wreckage, your navigators inform you that there is a small mining settlement build into the side of a large passing rock. They hail you and enthusiastically offer their wares.
+See if they have the capability to repair some of your ship.
+NA
+0.000.20
+Ask them if they have any engineers who would like to work on your ship
+NA
+0.000.20
+SH
+E
