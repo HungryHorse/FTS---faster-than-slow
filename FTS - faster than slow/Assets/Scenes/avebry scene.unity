@@ -504,6 +504,7 @@ GameObject:
   - component: {fileID: 40602152}
   - component: {fileID: 40602151}
   - component: {fileID: 40602150}
+  - component: {fileID: 40602154}
   - component: {fileID: 40602149}
   m_Layer: 5
   m_Name: Button (13)
@@ -726,6 +727,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 40602147}
+--- !u!114 &40602154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 40602147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &54755847
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,6 +954,7 @@ GameObject:
   - component: {fileID: 91177465}
   - component: {fileID: 91177464}
   - component: {fileID: 91177463}
+  - component: {fileID: 91177467}
   - component: {fileID: 91177462}
   m_Layer: 5
   m_Name: Button (12)
@@ -1159,6 +1177,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 91177460}
+--- !u!114 &91177467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 91177460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &92070558
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,6 +1536,7 @@ GameObject:
   - component: {fileID: 104463561}
   - component: {fileID: 104463560}
   - component: {fileID: 104463559}
+  - component: {fileID: 104463563}
   - component: {fileID: 104463558}
   m_Layer: 5
   m_Name: Button (20)
@@ -1724,6 +1759,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 104463556}
+--- !u!114 &104463563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 104463556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &109586293
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,6 +2137,7 @@ GameObject:
   - component: {fileID: 135291425}
   - component: {fileID: 135291424}
   - component: {fileID: 135291423}
+  - component: {fileID: 135291427}
   - component: {fileID: 135291422}
   m_Layer: 5
   m_Name: Button (5)
@@ -2308,6 +2360,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 135291420}
+--- !u!114 &135291427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 135291420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &136276415
 GameObject:
   m_ObjectHideFlags: 0
@@ -6024,6 +6092,7 @@ GameObject:
   - component: {fileID: 520113874}
   - component: {fileID: 520113873}
   - component: {fileID: 520113872}
+  - component: {fileID: 520113876}
   - component: {fileID: 520113871}
   m_Layer: 5
   m_Name: Button (6)
@@ -6246,6 +6315,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 520113869}
+--- !u!114 &520113876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 520113869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &530846832
 GameObject:
   m_ObjectHideFlags: 0
@@ -9627,6 +9712,7 @@ GameObject:
   - component: {fileID: 764684699}
   - component: {fileID: 764684698}
   - component: {fileID: 764684697}
+  - component: {fileID: 764684701}
   - component: {fileID: 764684696}
   m_Layer: 5
   m_Name: Button (11)
@@ -9849,6 +9935,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 764684694}
+--- !u!114 &764684701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764684694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &773318558
 GameObject:
   m_ObjectHideFlags: 0
@@ -10097,6 +10199,7 @@ GameObject:
   - component: {fileID: 789849629}
   - component: {fileID: 789849628}
   - component: {fileID: 789849627}
+  - component: {fileID: 789849631}
   - component: {fileID: 789849626}
   m_Layer: 5
   m_Name: Button (14)
@@ -10319,6 +10422,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 789849624}
+--- !u!114 &789849631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 789849624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &791233910
 GameObject:
   m_ObjectHideFlags: 0
@@ -11143,6 +11262,7 @@ GameObject:
   - component: {fileID: 814792495}
   - component: {fileID: 814792494}
   - component: {fileID: 814792493}
+  - component: {fileID: 814792497}
   - component: {fileID: 814792492}
   m_Layer: 5
   m_Name: Button (21)
@@ -11365,6 +11485,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 814792490}
+--- !u!114 &814792497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 814792490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &817431077
 GameObject:
   m_ObjectHideFlags: 0
@@ -11452,6 +11588,7 @@ GameObject:
   - component: {fileID: 818385584}
   - component: {fileID: 818385583}
   - component: {fileID: 818385582}
+  - component: {fileID: 818385586}
   - component: {fileID: 818385581}
   m_Layer: 5
   m_Name: Button (17)
@@ -11674,6 +11811,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 818385579}
+--- !u!114 &818385586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 818385579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &832022586
 GameObject:
   m_ObjectHideFlags: 0
@@ -11687,6 +11840,7 @@ GameObject:
   - component: {fileID: 832022591}
   - component: {fileID: 832022590}
   - component: {fileID: 832022589}
+  - component: {fileID: 832022593}
   - component: {fileID: 832022588}
   m_Layer: 5
   m_Name: Button (8)
@@ -11909,6 +12063,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 832022586}
+--- !u!114 &832022593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 832022586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &840214141
 GameObject:
   m_ObjectHideFlags: 0
@@ -15945,6 +16115,7 @@ GameObject:
   - component: {fileID: 1259995637}
   - component: {fileID: 1259995636}
   - component: {fileID: 1259995635}
+  - component: {fileID: 1259995639}
   - component: {fileID: 1259995634}
   m_Layer: 5
   m_Name: Button (7)
@@ -16167,6 +16338,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1259995632}
+--- !u!114 &1259995639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1259995632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &1268397978
 GameObject:
   m_ObjectHideFlags: 0
@@ -16791,6 +16978,7 @@ GameObject:
   - component: {fileID: 1341591444}
   - component: {fileID: 1341591443}
   - component: {fileID: 1341591442}
+  - component: {fileID: 1341591447}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -17012,6 +17200,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1341591440}
+--- !u!114 &1341591447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1341591440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &1342353495
 GameObject:
   m_ObjectHideFlags: 0
@@ -17230,6 +17434,7 @@ GameObject:
   - component: {fileID: 1369863068}
   - component: {fileID: 1369863067}
   - component: {fileID: 1369863066}
+  - component: {fileID: 1369863070}
   - component: {fileID: 1369863065}
   m_Layer: 5
   m_Name: Button (2)
@@ -17452,6 +17657,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1369863063}
+--- !u!114 &1369863070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1369863063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &1377796603
 GameObject:
   m_ObjectHideFlags: 0
@@ -17465,6 +17686,7 @@ GameObject:
   - component: {fileID: 1377796608}
   - component: {fileID: 1377796607}
   - component: {fileID: 1377796606}
+  - component: {fileID: 1377796610}
   - component: {fileID: 1377796605}
   m_Layer: 5
   m_Name: Button (3)
@@ -17687,6 +17909,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1377796603}
+--- !u!114 &1377796610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1377796603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &1410556713
 GameObject:
   m_ObjectHideFlags: 0
@@ -17830,6 +18068,7 @@ GameObject:
   - component: {fileID: 1412992176}
   - component: {fileID: 1412992175}
   - component: {fileID: 1412992174}
+  - component: {fileID: 1412992178}
   - component: {fileID: 1412992173}
   m_Layer: 5
   m_Name: Button (16)
@@ -18052,6 +18291,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1412992171}
+--- !u!114 &1412992178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1412992171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &1414972589
 GameObject:
   m_ObjectHideFlags: 0
@@ -18353,6 +18608,7 @@ GameObject:
   - component: {fileID: 1445512619}
   - component: {fileID: 1445512618}
   - component: {fileID: 1445512617}
+  - component: {fileID: 1445512621}
   - component: {fileID: 1445512616}
   m_Layer: 5
   m_Name: Button (15)
@@ -18575,6 +18831,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1445512614}
+--- !u!114 &1445512621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445512614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &1455372775
 GameObject:
   m_ObjectHideFlags: 0
@@ -18588,6 +18860,7 @@ GameObject:
   - component: {fileID: 1455372780}
   - component: {fileID: 1455372779}
   - component: {fileID: 1455372778}
+  - component: {fileID: 1455372782}
   - component: {fileID: 1455372777}
   m_Layer: 5
   m_Name: Button (10)
@@ -18810,6 +19083,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1455372775}
+--- !u!114 &1455372782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1455372775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &1456957556
 GameObject:
   m_ObjectHideFlags: 0
@@ -18895,6 +19184,7 @@ GameObject:
   - component: {fileID: 1466154338}
   - component: {fileID: 1466154337}
   - component: {fileID: 1466154336}
+  - component: {fileID: 1466154340}
   - component: {fileID: 1466154335}
   m_Layer: 5
   m_Name: Button (19)
@@ -19117,6 +19407,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1466154333}
+--- !u!114 &1466154340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1466154333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &1477828635
 GameObject:
   m_ObjectHideFlags: 0
@@ -22349,6 +22655,7 @@ GameObject:
   - component: {fileID: 1764424216}
   - component: {fileID: 1764424215}
   - component: {fileID: 1764424214}
+  - component: {fileID: 1764424218}
   - component: {fileID: 1764424213}
   m_Layer: 5
   m_Name: Button (9)
@@ -22571,6 +22878,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1764424211}
+--- !u!114 &1764424218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1764424211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &1764809651
 GameObject:
   m_ObjectHideFlags: 0
@@ -25608,6 +25931,7 @@ GameObject:
   - component: {fileID: 2114424771}
   - component: {fileID: 2114424770}
   - component: {fileID: 2114424769}
+  - component: {fileID: 2114424773}
   - component: {fileID: 2114424768}
   m_Layer: 5
   m_Name: Button (18)
@@ -25830,6 +26154,22 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2114424766}
+--- !u!114 &2114424773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2114424766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4211e49ce7d47d42a0c9551bd5b1bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipObject: {fileID: 1375437371952044, guid: 78a2b0bf2b808bd4fbdb71ee581c85ea,
+    type: 2}
+  canvas: {fileID: 722185209}
+  toolTipTitle: 
+  castOnLeft: 0
 --- !u!1 &2126469436
 GameObject:
   m_ObjectHideFlags: 0

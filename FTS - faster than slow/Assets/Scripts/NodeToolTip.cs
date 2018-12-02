@@ -36,7 +36,7 @@ public class NodeToolTip : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
                 }
                 else
                 {
-                    currentToolTip.transform.position = new Vector3(gameObject.transform.position.x + 1f, gameObject.transform.position.y - 2f);
+                    currentToolTip.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - 1.5f);
                 }
 
                 goodPercent = GetComponent<NodeButton>().thisNode.GetComponent<Node>().GetGoodPercentage();
