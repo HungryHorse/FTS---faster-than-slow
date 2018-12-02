@@ -9,4 +9,9 @@ public class ChangeScene : MonoBehaviour {
     {
         SceneManager.LoadScene("avebry scene");
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
