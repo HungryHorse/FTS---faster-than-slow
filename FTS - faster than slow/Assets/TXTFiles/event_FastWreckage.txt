@@ -5,5 +5,5 @@ E
 You instruct your engineers to boost the engines and the ship careens forward, out of the way of oncoming damage.
 Stay at your current speed and hope that there will not be many more bits - you can not expend any more fuel.
 SH
-20
+0.20
 You stand your ground and instruct your crew to brace.
