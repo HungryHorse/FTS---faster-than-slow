@@ -1,14 +1,12 @@
 fileFormatVersion: 2
-guid: 08d057f18acc483478ef1dbf4a426ec9
+guid: 576bd6f5879ac9340ba725c693dff795
 TextureImporter:
   fileIDToRecycleName:
-    21300000: stats icons_0
-    21300002: stats icons_1
-    21300004: stats icons_2
-    21300006: stats icons_3
-    21300008: stats icons_4
-    21300010: stats icons_5
-    21300012: stats icons_6
+    21300000: ui_0
+    21300002: ui_1
+    21300004: ui_2
+    21300006: ui_3
+    21300008: ui_4
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -89,141 +87,101 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stats icons_0
+      name: ui_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 108
-        width: 54
-        height: 54
+        x: 3
+        y: 148
+        width: 58
+        height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7715a5d7f52a834799df77055b799c6
+      spriteID: 7d48fffbfab2a4d40ae9de57699fc5c9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stats icons_1
+      name: ui_1
       rect:
         serializedVersion: 2
-        x: 54
-        y: 108
-        width: 54
-        height: 54
+        x: 67
+        y: 131
+        width: 58
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3949583c14f5bd245a8527d98fe3b4f1
+      spriteID: 8a320ae023e557c4b970bc6a89ba72cd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stats icons_2
+      name: ui_2
       rect:
         serializedVersion: 2
-        x: 108
-        y: 108
-        width: 54
-        height: 54
+        x: 7
+        y: 95
+        width: 53
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9983c952fd906d49b58cc165520c06c
+      spriteID: 6e96d8ff2853cb045bd3514dc55eec8b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stats icons_3
+      name: ui_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 54
-        width: 54
-        height: 54
+        x: 112
+        y: 93
+        width: 11
+        height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48e0ebd1824951f47834dc68dbffb9b2
+      spriteID: 2a5e93f89ec989c48a680f0ac2df9d4d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stats icons_4
+      name: ui_4
       rect:
         serializedVersion: 2
-        x: 54
-        y: 54
-        width: 54
-        height: 54
+        x: 6
+        y: 24
+        width: 43
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42e384d23c388974daffbdd1eea2651e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stats icons_5
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 54
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1b89198efa817246bd4de97d505830c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: stats icons_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 54
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e84c5eeb2b9d1544f9961da5866c4e7d
+      spriteID: 3ce437db24005ef4995219cda6c01406
       vertices: []
       indices: 
       edges: []
@@ -231,7 +189,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: aa2482c681337bb408ddb42e19bb10fa
+    spriteID: 0b96aa659ec2a6a41951787221d534b6
     vertices: []
     indices: 
     edges: []

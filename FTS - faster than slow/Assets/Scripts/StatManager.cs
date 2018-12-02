@@ -40,7 +40,10 @@ public class StatManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (passengerAmount <= 0)
+        {
+            Debug.Log("You lost");
+        }
     }
 
     public void AddStat(string type, int amount)
@@ -208,20 +211,20 @@ public class StatManager : MonoBehaviour
 
     public void ResetValues()
     {
-        crewHealth = 0;
-        crewNutrition = 0;
-        navigationPoints = 0;
-        shipHealth = 0;
-        enginePower = 0;
+        crewHealth = crewHealth;
+        crewNutrition = crewNutrition;
+        navigationPoints = navigationPoints;
+        shipHealth = shipHealth;
+        enginePower = enginePower;
 
         //Crew Totals
         totalCrew = 0;
-        medicAmount = 0;
-        chefAmount = 0;
-        engineerAmount = 0;
-        navigatorAmount = 0;
-        securityAmount = 0;
-        passengerAmount = 0;
+        medicAmount = medicAmount;
+        chefAmount = chefAmount;
+        engineerAmount = engineerAmount;
+        navigatorAmount = navigatorAmount;
+        securityAmount = securityAmount;
+        passengerAmount = passengerAmount;
         WriteStats();
         CalculateStats();
     }

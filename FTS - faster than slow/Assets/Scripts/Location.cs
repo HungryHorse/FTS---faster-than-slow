@@ -9,8 +9,7 @@ public class Location : MonoBehaviour
 
     private void Start()
     {
-        eventIndex = 0;
-        EventText();
+        eventIndex = Random.Range(0, events.Length);
     }
 
     public void EventText()

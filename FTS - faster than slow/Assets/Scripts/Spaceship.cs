@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Spaceship : MonoBehaviour {
     public Node currNode;
+    public PopUpManager popUpManager;
 
 
 	// Use this for initialization
@@ -17,5 +18,7 @@ public class Spaceship : MonoBehaviour {
     {
         currNode = node;
         transform.position = currNode.gameObject.transform.position;
+        popUpManager.UpdateLocation(currNode.location);
+        currNode.location.EventText();
     }
 }
