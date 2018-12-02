@@ -1,8 +1,11 @@
 You approach a barren, dry looking planet and notice an active looking mining sattelite. It seems to have mined the planet of all its resources and is now drifting aimlessly.
 Send your engineers to see if they need anything or have any excess material they could part with.
 SH
-0.1
-Send them a message and see if they have any staff left over who are not needed now that the job is finished
+0.000.1
+They offer you some materials that can be used by your engineers to repair the ship a bit.
+Send them a message and see if they have any staff left over who are not needed now that the job is finished.
 NA
 0.000.05
+They offer some spare navigators that are no longer needed for the job.
+SH
 N

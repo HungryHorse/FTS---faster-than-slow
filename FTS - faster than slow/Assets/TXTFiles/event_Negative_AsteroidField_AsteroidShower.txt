@@ -2,6 +2,9 @@ As you pass through the field you begin to hear a pattering like rain on the out
 Turn the passenger quarters towards the barrage. You must protect your crew.
 P
 0.35
+
 Turn the front of the ship toward the danger. You hope the kitchen staff are on their lunch break.
 C
 0.4
+
+

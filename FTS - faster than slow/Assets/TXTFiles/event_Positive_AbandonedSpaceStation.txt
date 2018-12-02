@@ -2,8 +2,10 @@ You pull up next to a space station that seems devoid of life. You don't see any
 Send in a team of engineers to see what is going on inside.
 NA
 0.000.20
+Your engineers manage to find and salvage extra materials which they use to fix any damage to your ship.
 Send in a security team to check for survivors.
 NA
 0.000.10
+Your security team manages to find a group of nomads with the space station that are looking for a way off this wreck and know the surrounding area very well.
 SH
 N
