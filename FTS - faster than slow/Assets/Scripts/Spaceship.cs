@@ -14,5 +14,7 @@ public class Spaceship : MonoBehaviour {
         transform.position = currNode.gameObject.transform.position;
         locationForShip.location = currNode.location;
         locationForShip.EventSpawn();
+
+        locationForShip.location.EnterLocation();
     }
 }
