@@ -13,7 +13,6 @@ public class Node : MonoBehaviour
     public float goodChance;
     public float badChance;
     public StatManager stat;
-    public GameObject physicalShip;
     public GameObject[] starmaps;
 
     private void Awake()
@@ -22,11 +21,16 @@ public class Node : MonoBehaviour
         goodChance = Random.Range(0, 0.35f);
         badChance = 1 - goodChance;
         int rand = Random.Range(0, locationArray.Length);
-        location = Instantiate(locationArray[rand]);
+
+        if(!first)
+        {
+            location = Instantiate(locationArray[rand]);
+
+        }
 
         if (first)
         {
-            Debug.Log("HI");
+            location = Instantiate(location);
             ship.PositionUpdate(this);
         }
     }
