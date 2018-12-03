@@ -5,6 +5,7 @@ using UnityEngine;
 public class SoundPlayer : MonoBehaviour {
 
     AudioSource player;
+    float volume;
 
 	// Use this for initialization
 	void Start () {
@@ -25,5 +26,11 @@ public class SoundPlayer : MonoBehaviour {
     public void PlayBGM()
     {
         player.Play();
+    }
+
+    public void SetVolume(float v)
+    {
+        volume = v;
+        player.volume = volume;
     }
 }
