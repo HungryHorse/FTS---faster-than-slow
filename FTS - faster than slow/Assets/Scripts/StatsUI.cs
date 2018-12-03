@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class StatsUI : MonoBehaviour {
 
     StatManager stats;
+    ScoreManager scoreManager;
 
     public Text totalCrew;
     public Text passengers;

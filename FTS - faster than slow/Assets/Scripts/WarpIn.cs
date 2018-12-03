@@ -8,15 +8,11 @@ public class WarpIn : MonoBehaviour {
     public StarMapmanager starmapManager;
     public AudioClip warpInSound;
     public AudioClip warpOutSound;
+    public ScoreManager scoreManager;
 
     private void Awake()
     {
         GetComponent<Animator>().Play("WarpIn");
-        
-    }
-
-    void Start()
-    {
         
     }
 
@@ -40,6 +36,14 @@ public class WarpIn : MonoBehaviour {
 
     public void WarpedOut()
     {
-        starmapManager.TurnStarmapsOn();
+        if (spaceship.location.isEnd)
+        {
+            Debug.Log(scoreManager.GetScore());
+
+        }
+        else
+        {
+            starmapManager.TurnStarmapsOn();
+        }
     }
 }

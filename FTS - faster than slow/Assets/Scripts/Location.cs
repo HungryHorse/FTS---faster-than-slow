@@ -11,6 +11,7 @@ public class Location : MonoBehaviour
     public Event[] badEvents;
     public Sprite backgroundSprite;
     public Image background;
+    public bool isEnd;
 
     private void Awake()
     {
