@@ -52,6 +52,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventIndex: 0
-  events:
-  - text: {fileID: 4900000, guid: 7a13805f46175e541b1cb76082b4b97a, type: 3}
+  isGood: 0
+  goodEvents:
+  - text: {fileID: 4900000, guid: 9d346abcd71d37f4d99959f40cec0b3a, type: 3}
     voiceLines: []
+  badEvents:
+  - text: {fileID: 4900000, guid: 9d346abcd71d37f4d99959f40cec0b3a, type: 3}
+    voiceLines: []
+  - text: {fileID: 4900000, guid: 561d3fb6c445f7e4ab491aa88eb3122f, type: 3}
+    voiceLines: []
+  backgroundSprite: {fileID: 0}
+  background: {fileID: 0}
+  isEnd: 0
