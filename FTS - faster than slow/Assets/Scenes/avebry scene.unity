@@ -5171,6 +5171,7 @@ MonoBehaviour:
   volSlider: {fileID: 1044300367}
   starvingMenu: {fileID: 1651278918}
   statManager: {fileID: 1013589994}
+  StarMap: {fileID: 1194872062}
 --- !u!1 &727558709
 GameObject:
   m_ObjectHideFlags: 0
