@@ -2,7 +2,7 @@ You approach a barren, dry looking planet and notice an active looking mining sa
 Send your engineers to see if they need anything or have any excess material they could part with.
 SH
 0.000.1
-They offer you some materials that can be used by your engineers to repair the ship a bit.
+They offer you some materials that can be used by your engineers to repair the ship. They appear to have quite a surplus.
 Send them a message and see if they have any staff left over who are not needed now that the job is finished.
 NA
 0.000.05

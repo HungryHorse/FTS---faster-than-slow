@@ -2,10 +2,10 @@ As you come across a deserted and dusty looking planet, your scans show a settle
 Send your chefs to check if it is edible
 C
 0.200.10
-
+You quickly recieve reports that the organic matter is edible. It is just that it appears to be fighting back.
 Send security in case it is sentient
 S
 0.200.10
-
+Your security report back that your suspicions were correct. They fight off the plant life and manage to retrieve a small amount of edible material.
 CN
 CN
