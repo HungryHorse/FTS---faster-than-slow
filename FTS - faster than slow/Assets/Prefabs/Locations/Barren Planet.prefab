@@ -56,8 +56,6 @@ MonoBehaviour:
   goodEvents:
   - text: {fileID: 4900000, guid: f79d7f52ff938084db34bb092b56c86e, type: 3}
     voiceLines: []
-  - text: {fileID: 4900000, guid: 6ee6ad9a4007f6a45a7cc762277fb3bc, type: 3}
-    voiceLines: []
   badEvents:
   - text: {fileID: 4900000, guid: 7a13805f46175e541b1cb76082b4b97a, type: 3}
     voiceLines: []
