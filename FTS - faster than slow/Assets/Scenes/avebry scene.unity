@@ -7914,7 +7914,7 @@ MonoBehaviour:
   newStarving: 1
   optionsMenu: {fileID: 722185211}
   crewHealth: 100
-  crewNutrition: 100
+  crewNutrition: 180
   navigationPoints: 0
   shipHealth: 100
   enginePower: 0
