@@ -26,9 +26,12 @@ public class Event
     Text option2Text;
     Text responseText;
     bool failedATest;
+    public GameOver gameOver;
 
     public void SetText()
     {
+        gameOver = GameObject.Find("GameOver").GetComponent<GameOver>();
+
         stats = GameObject.Find("Stats").GetComponent<StatManager>();
 
         description = GameObject.FindGameObjectWithTag("Description").GetComponent<Text>();
@@ -111,7 +114,7 @@ public class Event
                 else
                 {
                     //GameOverState
-                    Debug.Log("You lost");
+                    gameOver.gameOver();
                 }
                 failedATest = true;
             }
@@ -137,7 +140,7 @@ public class Event
                 else
                 {
                     //GameOverState
-                    Debug.Log("You lost");
+                    gameOver.gameOver();
                 }
                 failedATest = true;
             }
