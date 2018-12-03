@@ -19,4 +19,9 @@ public class ChangeScene : MonoBehaviour {
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }
