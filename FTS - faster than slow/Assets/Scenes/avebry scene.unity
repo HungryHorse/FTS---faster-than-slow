@@ -7884,7 +7884,6 @@ GameObject:
   - component: {fileID: 665632026}
   - component: {fileID: 665632028}
   - component: {fileID: 665632027}
-  - component: {fileID: 665632029}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -7946,19 +7945,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 665632025}
---- !u!114 &665632029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 665632025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fea554c61b699e49b15eac0b9fadd3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starMap: {fileID: 0}
-  starMapImage: {fileID: 0}
 --- !u!1 &670166769
 GameObject:
   m_ObjectHideFlags: 0
@@ -22691,6 +22677,7 @@ MonoBehaviour:
   currNode: {fileID: 543310098}
   locationForShip: {fileID: 372406042}
   starmapManager: {fileID: 355729183}
+  canMove: 0
 --- !u!61 &1764809654
 BoxCollider2D:
   m_ObjectHideFlags: 0
