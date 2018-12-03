@@ -158,7 +158,7 @@ public class StatManager : MonoBehaviour
         crewHealth = Mathf.Clamp(crewHealth, 0, 100);
         //Crew Nutrition
         crewNutrition -= (totalCrew + passengerAmount);
-        crewNutrition += (chefAmount * 30);
+        crewNutrition += (chefAmount * 10);
 
         if (crewNutrition < 0)
         {

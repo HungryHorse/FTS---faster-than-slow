@@ -13628,15 +13628,15 @@ MonoBehaviour:
   StartingShipHealth: 100
   crewHealth: 100
   crewNutrition: 100
-  navigationPoints: 100
+  navigationPoints: 0
   shipHealth: 100
-  enginePower: 100
-  totalCrew: 100
-  medicAmount: 100
-  chefAmount: 100
-  engineerAmount: 20
-  navigatorAmount: 100
-  securityAmount: 100
+  enginePower: 0
+  totalCrew: 0
+  medicAmount: 15
+  chefAmount: 15
+  engineerAmount: 15
+  navigatorAmount: 15
+  securityAmount: 15
   passengerAmount: 100
 --- !u!4 &1013589995
 Transform:
