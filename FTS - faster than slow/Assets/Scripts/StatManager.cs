@@ -269,5 +269,13 @@ public class StatManager : MonoBehaviour
         }
     }
 
+    public int CalculateScore()
+    {
+        int score = 0;
+        score = ((passengerAmount * 2) + totalCrew + shipHealth + crewHealth);
+
+        return score;
+    }
+
 
 }

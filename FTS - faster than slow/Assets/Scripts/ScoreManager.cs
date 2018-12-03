@@ -13,7 +13,7 @@ public class ScoreManager : MonoBehaviour {
         return score;
     }
 
-    public void SetInt(int setScore)
+    public void SetScore(int setScore)
     {
         score = setScore;
     }

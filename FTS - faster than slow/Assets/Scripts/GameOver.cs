@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
+    public GameObject scoreManager;
     public void gameOver()
     {
         SceneManager.LoadScene("GameOver");
