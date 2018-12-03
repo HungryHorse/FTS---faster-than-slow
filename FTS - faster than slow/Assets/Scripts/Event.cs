@@ -221,7 +221,7 @@ public class Event
 
             case "P\r":
                 stats.RemoveStat("Passengers", (int)(option1DC * 100));
-                response += "\n\n" + (int)(option1DC * 100) + " passengers died.";
+                response += "\n\n" + (int)(option1DC * 100) + " passengers were lost.";
                 break;
 
             case "SH\r":
@@ -372,7 +372,7 @@ public class Event
 
             case "P\r":
                 stats.RemoveStat("Passengers", (int)(option2DC * 100));
-                response += "\n\n" + (int)(option2DC * 100) + " passengers died.";
+                response += "\n\n" + (int)(option2DC * 100) + " passengers were lost.";
                 break;
 
             case "SH\r":
