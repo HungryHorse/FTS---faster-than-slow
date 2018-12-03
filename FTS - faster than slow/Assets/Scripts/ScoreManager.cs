@@ -8,6 +8,11 @@ public class ScoreManager : MonoBehaviour {
     [SerializeField]
     private int score;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
+
     public int GetScore()
     {
         return score;
