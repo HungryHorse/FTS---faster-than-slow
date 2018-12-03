@@ -216,6 +216,7 @@ MonoBehaviour:
   curImage: {fileID: 205511582}
   button1: {fileID: 954117783}
   button2: {fileID: 2131326992}
+  button3: {fileID: 756770066}
 --- !u!1 &595222450
 GameObject:
   m_ObjectHideFlags: 0
