@@ -6,6 +6,7 @@ using UnityEngine;
 public class Node : MonoBehaviour
 {
     public bool first;
+    public bool end;
     public Location location;
     public Location[] locationArray;
     public Node[] prevNodes;
@@ -25,7 +26,7 @@ public class Node : MonoBehaviour
         distance = Random.Range(70, 150);
         int rand = Random.Range(0, locationArray.Length);
 
-        if(!first)
+        if(!first && !end)
         {
             location = Instantiate(locationArray[rand]);
 
@@ -34,6 +35,10 @@ public class Node : MonoBehaviour
         {
             location = Instantiate(location);
             ship.PositionUpdate(this, true);
+        }
+        else if (end)
+        {
+            location = Instantiate(location);
         }
     }    
 
