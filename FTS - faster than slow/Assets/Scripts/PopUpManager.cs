@@ -42,6 +42,7 @@ public class PopUpManager : MonoBehaviour
         TurnOffAll();
         TurnOnDesc();
         EventUI.SetActive(false);
+        GameObject.FindGameObjectWithTag("SoundPlayer").GetComponent<SoundPlayer>().PlaySound(buttonClickSound);
     }
 
     public void TurnOnDesc()
