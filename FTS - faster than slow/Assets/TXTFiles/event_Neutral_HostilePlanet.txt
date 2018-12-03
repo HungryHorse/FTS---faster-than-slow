@@ -1,0 +1,10 @@
+As you enter the system your scanners pick up a huge amount of life readings, after a small amount investigation it looks like refugees are trying to escape from an army fowling them. Your drop pod only has enough space for medics or security not both.
+Send the medics, risking their lives in the process but saving more of the civilians.
+M
+0.700.50
+You manage to save many of the refugees but at what cost. Was the sacrifice worth it?
+Send your security, they’ll be able to look after themselves but the wounded will be left to the army.
+S
+0.200.10
+P
+P

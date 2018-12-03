@@ -1,0 +1,8 @@
+You are abruptly ripped from near lightspeed travel as your engines suddenly cut out. A huge behemoth class planet blocks the systems sun from view. As the engineers frantically try to coax the engines back into working the ships alarm starts blaring. A boarding party has invaded.
+Quickly overcharge the engines probably killing some of the engineers working on them but getting you out of there before more manage to get aboard.
+E
+0.60
+Your engineers mange to overcharge enough of the engines that you could get out of there and fully recover from the attack.
+Wait for the engineers to fix them safely. The crew will suffer a larger attack but it can’t be helped.
+CH
+0.40
