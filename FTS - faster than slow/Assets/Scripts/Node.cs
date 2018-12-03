@@ -22,7 +22,7 @@ public class Node : MonoBehaviour
     private void Awake()
     {
         stat = GameObject.FindGameObjectWithTag("StatManager").GetComponent<StatManager>();
-        goodChance = Random.Range(0.1f, 0.55f);
+        goodChance = Random.Range(0.1f, 0.35f);
         badChance = 1 - goodChance;
         distance = Random.Range(70, 150);
         int rand = Random.Range(0, locationArray.Length);
