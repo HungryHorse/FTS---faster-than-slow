@@ -44,9 +44,9 @@ public class NodeToolTip : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
                 badPercent = GetComponent<NodeButton>().thisNode.GetComponent<Node>().GetBadPercentage();
                 distance = GetComponent<NodeButton>().thisNode.GetComponent<Node>().distance;
 
-                currentToolTip.transform.GetChild(1).GetComponent<Text>().text = distance.ToString();
-                currentToolTip.transform.GetChild(2).GetComponent<Text>().text = goodPercent;
-                currentToolTip.transform.GetChild(3).GetComponent<Text>().text = badPercent;
+                currentToolTip.transform.GetChild(1).GetComponent<Text>().text = "Distance: " + distance.ToString();
+                currentToolTip.transform.GetChild(2).GetComponent<Text>().text = "Good Event: " + goodPercent;
+                currentToolTip.transform.GetChild(3).GetComponent<Text>().text = "Bad Event: " + badPercent;
             }
         }
 
