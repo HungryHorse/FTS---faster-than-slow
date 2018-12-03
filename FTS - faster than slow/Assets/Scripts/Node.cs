@@ -48,7 +48,7 @@ public class Node : MonoBehaviour
         {
             if(ship.currNode == prevNodes[i])
             {
-                float makeGood = Random.Range(0, 1);
+                float makeGood = Random.Range(0.0f, 1.0f);
                 if (makeGood < goodChance)
                 {
                     location.isGood = true;
