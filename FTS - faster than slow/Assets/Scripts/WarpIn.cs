@@ -42,6 +42,7 @@ public class WarpIn : MonoBehaviour {
             Debug.Log(scoreManager.GetScore());
             score = GameObject.FindGameObjectWithTag("StatManager").GetComponent<StatManager>().CalculateScore();
             scoreManager.SetScore(score);
+            GameObject.Find("GameOver").GetComponent<GameOver>().winGame();
         }
         else
         {

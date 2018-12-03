@@ -2418,6 +2418,7 @@ MonoBehaviour:
   prevNodes:
   - {fileID: 1500827803}
   - {fileID: 408521941}
+  - {fileID: 543310098}
   ship: {fileID: 1764809653}
   goodChance: 0
   badChance: 0
@@ -2777,7 +2778,7 @@ MonoBehaviour:
   starmapManager: {fileID: 355729183}
   warpInSound: {fileID: 8300000, guid: 84523599ff78dbb44b9ccabd37acb160, type: 3}
   warpOutSound: {fileID: 8300000, guid: 60b0c7fcabaf6aa47968ca9e93bbdce1, type: 3}
-  scoreManager: {fileID: 0}
+  scoreManager: {fileID: 1406513292}
 --- !u!114 &372406042
 MonoBehaviour:
   m_ObjectHideFlags: 0
