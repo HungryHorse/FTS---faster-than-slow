@@ -22,7 +22,7 @@ public class Node : MonoBehaviour
     private void Awake()
     {
         stat = GameObject.FindGameObjectWithTag("StatManager").GetComponent<StatManager>();
-        goodChance = Random.Range(0, 0.35f);
+        goodChance = Random.Range(0.1f, 0.55f);
         badChance = 1 - goodChance;
         distance = Random.Range(70, 150);
         int rand = Random.Range(0, locationArray.Length);
@@ -92,32 +92,47 @@ public class Node : MonoBehaviour
 
     public void SetGoodChance(int noOfNav)
     {
-        int rand;
+        int rand = 0;
         int good = 0;
         good = (int)(goodChance * 100);
 
-        int percentOfNavs = (noOfNav / 20);
+        int percentOfNavs = (noOfNav / 15);
 
-        if(percentOfNavs >= 0.75)
+        if(percentOfNavs >= 0.8)
         {
             
         }
-        else if(percentOfNavs < 0.75)
+        else if(percentOfNavs >= 0.7)
         {
-            rand = Random.Range(-10, 1);
+            rand = Random.Range(-1, 1);
         }
-        else if (percentOfNavs < 0.5)
+        else if (percentOfNavs >= 0.6)
+        {
+            rand = Random.Range(-2, 1);
+        }
+        else if (percentOfNavs >= 0.5)
+        {
+            rand = Random.Range(-4, 1);
+        }
+        else if (percentOfNavs >= 0.4)
+        {
+            rand = Random.Range(-8, 1);
+        }
+        else if (percentOfNavs >= 0.3)
+        {
+            rand = Random.Range(-14, 1);
+        }
+        else if (percentOfNavs >= 0.2)
         {
             rand = Random.Range(-20, 1);
-        }
-        else if (percentOfNavs < 0.25)
-        {
-            rand = Random.Range(-30, 1);
         }
         else
         {
             good = 0;
         }
+
+        good += rand;
+        good = Mathf.Clamp(good, 0, 100);
 
         goodChance = (float)good / 100f;
     }
