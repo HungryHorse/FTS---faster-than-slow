@@ -145,6 +145,11 @@ public class StatManager : MonoBehaviour
 
     public void CalculateStats()
     {
+        medicAmount = (int)Mathf.Clamp(medicAmount, 0, Mathf.Infinity);
+        engineerAmount = (int)Mathf.Clamp(engineerAmount, 0, Mathf.Infinity);
+        securityAmount = (int)Mathf.Clamp(securityAmount, 0, Mathf.Infinity);
+        navigatorAmount = (int)Mathf.Clamp(navigatorAmount, 0, Mathf.Infinity);
+        chefAmount = (int)Mathf.Clamp(chefAmount, 0, Mathf.Infinity);
         totalCrew = medicAmount + chefAmount + engineerAmount + navigatorAmount + securityAmount;
         navigationPoints = navigatorAmount;
         enginePower = (30 + (engineerAmount * 2) + (shipHealth / 100 * 30));
