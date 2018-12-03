@@ -43,7 +43,7 @@ public class StatManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (passengerAmount <= 0)
+        if (passengerAmount <= 0 || shipHealth <= 0 || crewHealth <= 0)
         {
             gameOver.gameOver();
         }
