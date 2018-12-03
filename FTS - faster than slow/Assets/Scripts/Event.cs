@@ -298,8 +298,8 @@ public class Event
                 break;
 
             case "NU\r":
-                stats.AddStat("Nutrition", (int)(option1Reward * 10));
-                text += "You manage to salvage " + option1Reward * 10 + " units of food";
+                stats.AddStat("Nutrition", (int)(option1Reward * 100));
+                text += "You manage to salvage " + option1Reward * 100 + " units of food";
                 break;
 
             default:
@@ -450,8 +450,8 @@ public class Event
                 break;
 
             case "NU\r":
-                stats.AddStat("Nutrition", (int)(option2Reward * 10));
-                text += "You manage to salvage " + option2Reward * 10 + " units of food";
+                stats.AddStat("Nutrition", (int)(option2Reward * 100));
+                text += "You manage to salvage " + option2Reward * 100 + " units of food";
                 break;
 
             default:

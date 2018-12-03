@@ -13,6 +13,8 @@ public class StatManager : MonoBehaviour
     [SerializeField]
     int StartingShipHealth;
 
+    public GameOver gameOver;
+
     //Stat Totals
     public int crewHealth;
     public int crewNutrition;
@@ -33,6 +35,7 @@ public class StatManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        gameOver = GameObject.Find("GameOver").GetComponent<GameOver>();
         ReadStats();
         CalculateStats();
     }
@@ -42,7 +45,7 @@ public class StatManager : MonoBehaviour
     {
         if (passengerAmount <= 0)
         {
-            Debug.Log("You lost");
+            gameOver.gameOver();
         }
     }
 
@@ -154,7 +157,7 @@ public class StatManager : MonoBehaviour
     {
 
         //Crew Health
-        crewHealth += medicAmount;
+        crewHealth += Mathf.FloorToInt(medicAmount / 2);
         crewHealth = Mathf.Clamp(crewHealth, 0, 100);
         //Crew Nutrition
         crewNutrition -= (totalCrew + passengerAmount);
