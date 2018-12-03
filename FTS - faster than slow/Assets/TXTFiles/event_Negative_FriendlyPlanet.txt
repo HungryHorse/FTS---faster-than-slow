@@ -1,0 +1,9 @@
+This is a large planet with a number of large settlements. You overhear some suspicious radio chatter before their comms are cut off.
+Investigate further on the surface
+S
+0.7
+You send down a security team in order to assess the situation. They appear to be welcomed in with open arms but as soon as they enter a building all communication is cut off with a sharp click. it does not come back on.
+Send some medics as a kind of peace offering. Everyone needs healers right...
+M
+0.7
+You send a team of medics into a town sized settlement. The people there seem wary but allow your medics to assess their situation. A large portion of them have strange behaviour that your medics have not seen before. The residents started acting erratically, not all your medics escaped before the bloodshed began.
