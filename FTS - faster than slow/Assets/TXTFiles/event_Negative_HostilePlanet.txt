@@ -3,6 +3,7 @@ Quickly overcharge the engines probably killing some of the engineers working on
 E
 0.60
 Your engineers mange to overcharge enough of the engines that you could get out of there and fully recover from the attack.
-Wait for the engineers to fix them safely. The crew will suffer a larger attack but it can’t be helped.
+Wait for the engineers to fix them safely. The crew will suffer a larger attack but it cannot be helped.
 CH
 0.40
+You eventually manage to flee the ambush, unfortunately many of your passengers and crew were injured in the melee.

@@ -283,8 +283,8 @@ public class Event
                 break;
 
             case "P\r":
-                stats.AddStat("Passengers", (int)(option1Reward * 10));
-                text += "You gain " + option1Reward * 10 + " passengers";
+                stats.AddStat("Passengers", (int)(option1Reward * 100));
+                text += "You gain " + option1Reward * 100 + " passengers";
                 break;
 
             case "SH\r":
@@ -435,8 +435,8 @@ public class Event
                 break;
 
             case "P\r":
-                stats.AddStat("Passengers", (int)(option2Reward * 10));
-                text += "You gain " + option2Reward + " passengers";
+                stats.AddStat("Passengers", (int)(option2Reward * 100));
+                text += "You gain " + option2Reward * 100 + " passengers";
                 break;
 
             case "SH\r":

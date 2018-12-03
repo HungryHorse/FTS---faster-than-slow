@@ -2,7 +2,7 @@ You approach what looked like a civilian vessel but as you get closer they put o
 Send some of your security personnel to fight off the attackers and remove the claws from your ship.
 S
 0.5
-You send a small force of security to repel the attackers. They manage to remove the claws from your hull but it's tricky.
+You send a small force of security to repel the attackers. They manage to remove the claws from your hull but it is tricky.
 Try to steer the ship and pull away
 SH
 0.3

@@ -5,7 +5,7 @@ NA
 They eagerly signal you in and get to work. They do a fine job restoring your hull integrity and ask for little in return.
 Enquire if instead they have got any engineers who would like to transfer to your vessel
 NA
-0.000.50
+0.000.10
 The ask around and do indeed manage to find a few engineers eager to leave the repair dock and go on to greater things. They join your crew.
 SH
 E
