@@ -164,7 +164,7 @@ public class StatManager : MonoBehaviour
         //Crew Health
         //Crew Nutrition
         crewNutrition -= (totalCrew + passengerAmount);
-        crewNutrition += (chefAmount * 10);
+        crewNutrition += (chefAmount * 7);
 
         if (crewNutrition < 0)
         {
