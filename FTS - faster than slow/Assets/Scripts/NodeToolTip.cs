@@ -31,6 +31,7 @@ public class NodeToolTip : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             if (button.thisNode.ship.currNode == button.thisNode.prevNodes[i])
             {
                 currentToolTip = Instantiate(tooltipObject, canvas.transform);
+                currentToolTip.transform.SetAsFirstSibling();
                 if (castOnLeft)
                 {
                     currentToolTip.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 1.5f);
