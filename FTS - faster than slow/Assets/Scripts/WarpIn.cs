@@ -9,6 +9,7 @@ public class WarpIn : MonoBehaviour {
     public AudioClip warpInSound;
     public AudioClip warpOutSound;
     public ScoreManager scoreManager;
+    int score;
 
     private void Awake()
     {
@@ -39,6 +40,9 @@ public class WarpIn : MonoBehaviour {
         if (spaceship.location.isEnd)
         {
             Debug.Log(scoreManager.GetScore());
+            score = GameObject.FindGameObjectWithTag("StatManager").GetComponent<StatManager>().CalculateScore();
+            scoreManager.SetScore(score);
+            GameObject.Find("GameOver").GetComponent<GameOver>().winGame();
         }
         else
         {
