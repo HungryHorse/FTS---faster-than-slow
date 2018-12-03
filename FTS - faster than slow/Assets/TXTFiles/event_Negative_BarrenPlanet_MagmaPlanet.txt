@@ -1,0 +1,13 @@
+You receive a distress call from a small ship caught in the orbit of a nearby planet with a white hot surface made up entirely of swirling spitting pools of magma. Low on fuel and overfilled after a rescue mission, the small vessel lacks the power to push against the planets gravitational force. Stuck so close the the planet, the tin ship is rapidly heating up; without swift aid, they’re bound to fry.
+Use your ship to tow theirs out of safety, and offer up space to their refugees in order to prevent this kind of incident in the future.
+SH
+0.301.00
+You successfully tow the ship behind yours, suffering some minor burns to the rear of your vessel. 
+Get away while you can, knowing that it is not worth the risk of endangering your whole ship in an attempt to save a few.
+NA
+0.00
+You leave the scene undamaged. Hopefully this will not weight too heavily on your concience.
+P
+
+
+ 

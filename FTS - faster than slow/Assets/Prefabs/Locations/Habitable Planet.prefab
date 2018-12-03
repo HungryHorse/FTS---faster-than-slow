@@ -61,6 +61,10 @@ MonoBehaviour:
     voiceLines: []
   - text: {fileID: 4900000, guid: 7a13805f46175e541b1cb76082b4b97a, type: 3}
     voiceLines: []
+  - text: {fileID: 4900000, guid: 7423f9061e854334d88c68c58275ef94, type: 3}
+    voiceLines: []
+  - text: {fileID: 4900000, guid: 1555fc3b9c17103428f6192d3f78f9d4, type: 3}
+    voiceLines: []
   backgroundSprite: {fileID: 21300000, guid: f29ff29350656684ebbf87ca5e2c6610, type: 3}
   background: {fileID: 0}
   isEnd: 0

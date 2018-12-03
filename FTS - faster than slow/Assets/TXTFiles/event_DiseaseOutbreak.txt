@@ -5,5 +5,5 @@ M
 You round up all the infected passengers and assign some members of your medical team to the issue. They will attempt to treat the patients as best they can.
 You have to limit this before it spreads further. Everyone with a severe enough case of the sickness is to be thrown from the airlock.
 P
-0.50
+0.25
 You get your security to round up the worst affected and throw them from the ship airlock. You did what had to be done.

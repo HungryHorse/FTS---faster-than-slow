@@ -1,0 +1,12 @@
+The ship is rapidly overheating. You see a nearby planet whose surface is covered in crystal clear water. This may offer a place to land for a while to cool the ship down before it takes damage and requires repairs. However, it is an unknown planet which may have unique risks.
+Land on the planet to allow the ship to cool down. 
+CH
+0.300.20
+You manage to cool off the ship by opening vents on the outside. Unfortunately this planet is home to a nasty airbourne disease which spreads quickly.
+Try to cool off by just slowing the ship.
+NA
+0.000.10
+You slow the ship down to cool off and this does help with the overheating issue. However as the explosion draws near some of this benefit is counteracted by burning flames licking the rear of your vessel.
+SH
+SH
+

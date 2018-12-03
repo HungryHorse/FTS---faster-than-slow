@@ -1,0 +1,10 @@
+As you pass overhead, you receive a message from a nearby planet requesting a trade. In the midst of a civil war, they are willing to offer you a number of engineers in return for some desperately needed medics. 
+Accept their trade 
+E
+0.500.30
+You accept their trade and recieve some medical staff in exchange for the engineers who drew the short straw.
+Deny the trade
+SH
+0.40
+As you go to leave the one who messaged you throws angry words in your direction. They train their weapons on you and fire.
+M

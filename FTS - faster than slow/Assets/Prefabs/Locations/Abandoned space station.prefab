@@ -56,6 +56,8 @@ MonoBehaviour:
   goodEvents:
   - text: {fileID: 4900000, guid: 415809c390c70584a932203364942e7e, type: 3}
     voiceLines: []
+  - text: {fileID: 4900000, guid: 31146fa08e48b9545b3a8ba465c41ed4, type: 3}
+    voiceLines: []
   badEvents:
   - text: {fileID: 4900000, guid: 7a13805f46175e541b1cb76082b4b97a, type: 3}
     voiceLines: []
@@ -68,6 +70,10 @@ MonoBehaviour:
   - text: {fileID: 4900000, guid: 9cc65458d8ec319449c4a30cb331f989, type: 3}
     voiceLines: []
   - text: {fileID: 4900000, guid: 85f4fd6cf90e4314eb7b9709e19b4f31, type: 3}
+    voiceLines: []
+  - text: {fileID: 4900000, guid: 7423f9061e854334d88c68c58275ef94, type: 3}
+    voiceLines: []
+  - text: {fileID: 4900000, guid: 31146fa08e48b9545b3a8ba465c41ed4, type: 3}
     voiceLines: []
   backgroundSprite: {fileID: 21300000, guid: 1887eb19a2126504492da0ff01252e10, type: 3}
   background: {fileID: 0}

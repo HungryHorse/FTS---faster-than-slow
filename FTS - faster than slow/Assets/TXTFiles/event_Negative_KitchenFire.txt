@@ -1,0 +1,10 @@
+All of a sudden, your alarms inform you that a fire has broken out in one of the kitchens, threatening to burn up all of our oxygen and put your whole ship in jeopardy. 
+Send down your security teams to try and fight the blaze and save the kitchen.
+S
+0.5
+Your security teams are able to control the fire eventually, at a cost. Bar a few scorch marks the chefs are saved.
+Lock the doors to that kitchen, keeping the fire contained and protecting the lives of the majority of your crew over the chefs currently trapped. 
+C
+0.7
+The chefs manage to put the fire out eventually and the rest of the crew is completely unharmed.
+

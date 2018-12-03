@@ -1,0 +1,9 @@
+You are not where your team of navigators had expected you to be. Stuck in an unfamiliar corner of space, you have lost your sense of direction and are not sure where to head. The navigators suggest using a small pod to scout out your surroundings in order to discover where you are and figure out your next steps. 
+Send your navigators out.
+N
+0.6
+As they are travelling your navigators come accross a small pirate warband. They try to flee but get shot down from behind.
+Stay where you are and hope other travellers find you soon.
+SH
+0.20
+Some debris from the explosion rakes your vessel just as a passing ship comes by with directions.

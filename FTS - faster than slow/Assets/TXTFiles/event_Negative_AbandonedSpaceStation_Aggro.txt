@@ -1,0 +1,10 @@
+You come across a broken space station. Sensors detect life forms are still present on the ship, but many are unconscious and probably require urgent medical care. 
+Collect the unconscious survivors and nurse them back to health.
+CH
+0.4
+All seems well, until a small group of them wake up and start attacking the medics and other passengers, confused by their new surroundings.
+Avoid whatever caused their demise, and move on before you suffer their fate.
+NA
+0.00
+You leave them behind you. No time for lost causes.
+
