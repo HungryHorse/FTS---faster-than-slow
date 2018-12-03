@@ -16,6 +16,17 @@ public class AfterOpening : MonoBehaviour {
         button2.SetActive(false);
     }
 
+    private void Update()
+    {
+        if (Input.anyKeyDown)
+        {
+            GetComponent<Animator>().Play("NoAnimTitle");
+
+            button1.SetActive(true);
+            button2.SetActive(true);
+        }
+    }
+
     public void AfterOpeningMethod()
     {
         Debug.Log("Hit");
