@@ -1,0 +1,11 @@
+Following a signal on your radar for a ship repair dock you come accross a shiny looking facility with a number of repair bays available.
+Request a service for your ship
+P
+0.300.50
+They willingly service your ship but do seem to require payment. When they see how many passengers you have aboard they request some people with some engineering ability be transferred to their crew for training.
+See if they will trade some passengers who want to leave your service for trained engineers
+P
+0.400.10
+The repair station agrees and states their offer. You accept and pray that these engineers are well trained.
+SH
+E
