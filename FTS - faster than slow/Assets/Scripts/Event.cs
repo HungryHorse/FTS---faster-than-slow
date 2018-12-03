@@ -258,33 +258,33 @@ public class Event
         switch (option1RewardIdentifer)
         {
             case "S\r":
-                stats.AddStat("Security", (int)(option1Reward * 100));
-                text += "Your crew expands adding " + option1Reward * 100 + " talented security officers to your ranks";
+                stats.AddStat("Security", (int)(option1Reward * 10));
+                text += "Your crew expands adding " + option1Reward * 10 + " talented security officers to your ranks";
                 break;
 
             case "M\r":
-                stats.AddStat("Medic", (int)(option1Reward * 100));
-                text += "Your crew feels much more spry now that " + option1Reward * 100 + " medical personnel have joined the ship";
+                stats.AddStat("Medic", (int)(option1Reward * 10));
+                text += "Your crew feels much more spry now that " + option1Reward * 10 + " medical personnel have joined the ship";
                 break;
 
             case "E\r":
-                stats.AddStat("Engineer", (int)(option1Reward * 100));
-                text += "Your engines aren't going to fail anytime soon with " + option1Reward * 100 + " more engineers on the ship";
+                stats.AddStat("Engineer", (int)(option1Reward * 10));
+                text += "Your engines aren't going to fail anytime soon with " + option1Reward * 10 + " more engineers on the ship";
                 break;
 
             case "C\r":
-                stats.AddStat("Chef", (int)(option1Reward * 100));
-                text += "Your crew won't be going hungry with these " + option1Reward * 100 + " new gourmet chefs";
+                stats.AddStat("Chef", (int)(option1Reward * 10));
+                text += "Your crew won't be going hungry with these " + option1Reward * 10 + " new gourmet chefs";
                 break;
 
             case "N\r":
-                stats.AddStat("Navigator", (int)(option1Reward * 100));
-                text += "These " + option1Reward * 100 + " new navigators promise they won't get you lost anytime soon";
+                stats.AddStat("Navigator", (int)(option1Reward * 10));
+                text += "These " + option1Reward * 10 + " new navigators promise they won't get you lost anytime soon";
                 break;
 
             case "P\r":
-                stats.AddStat("Passengers", (int)(option1Reward * 100));
-                text += "You gain " + option1Reward * 100 + " passengers";
+                stats.AddStat("Passengers", (int)(option1Reward * 10));
+                text += "You gain " + option1Reward * 10 + " passengers";
                 break;
 
             case "SH\r":
@@ -298,8 +298,8 @@ public class Event
                 break;
 
             case "NU\r":
-                stats.AddStat("Nutrition", (int)(option1Reward * 100));
-                text += "You manage to salvage " + option1Reward * 100 + " units of food";
+                stats.AddStat("Nutrition", (int)(option1Reward * 10));
+                text += "You manage to salvage " + option1Reward * 10 + " units of food";
                 break;
 
             default:
@@ -410,32 +410,32 @@ public class Event
         switch (option2RewardIdentifer)
         {
             case "S\r":
-                stats.AddStat("Security", (int)(option2Reward * 100));
-                text += "Your crew expands adding " + option2Reward * 100 + " talented security officers to your ranks";
+                stats.AddStat("Security", (int)(option2Reward * 10));
+                text += "Your crew expands adding " + option2Reward * 10 + " talented security officers to your ranks";
                 break;
 
             case "M\r":
-                stats.AddStat("Medic", (int)(option2Reward * 100));
-                text += "Your crew feels much more spry now that " + option2Reward * 100 + " medical personnel have joined the ship";
+                stats.AddStat("Medic", (int)(option2Reward * 10));
+                text += "Your crew feels much more spry now that " + option2Reward * 10 + " medical personnel have joined the ship";
                 break;
 
             case "E\r":
-                stats.AddStat("Engineer", (int)(option2Reward * 100));
-                text += "Your engines aren't going to fail anytime soon with " + option2Reward * 100 + " more engineers on the ship";
+                stats.AddStat("Engineer", (int)(option2Reward * 10));
+                text += "Your engines aren't going to fail anytime soon with " + option2Reward * 10 + " more engineers on the ship";
                 break;
 
             case "C\r":
-                stats.AddStat("Chef", (int)(option2Reward * 100));
-                text += "Your crew won't be going hungry with these " + option2Reward * 100 + " new gourmet chefs";
+                stats.AddStat("Chef", (int)(option2Reward * 10));
+                text += "Your crew won't be going hungry with these " + option2Reward * 10 + " new gourmet chefs";
                 break;
 
             case "N\r":
-                stats.AddStat("Navigator", (int)(option2Reward * 100));
-                text += "These " + option2Reward * 100 + " new navigators promise they won't get you lost anytime soon";
+                stats.AddStat("Navigator", (int)(option2Reward * 10));
+                text += "These " + option2Reward * 10 + " new navigators promise they won't get you lost anytime soon";
                 break;
 
             case "P\r":
-                stats.AddStat("Passengers", (int)(option2Reward * 100));
+                stats.AddStat("Passengers", (int)(option2Reward * 10));
                 text += "You gain " + option2Reward + " passengers";
                 break;
 
@@ -450,8 +450,8 @@ public class Event
                 break;
 
             case "NU\r":
-                stats.AddStat("Nutrition", (int)(option2Reward * 100));
-                text += "You manage to salvage " + option2Reward * 100 + " units of food";
+                stats.AddStat("Nutrition", (int)(option2Reward * 10));
+                text += "You manage to salvage " + option2Reward * 10 + " units of food";
                 break;
 
             default:
