@@ -39,7 +39,6 @@ public class WarpIn : MonoBehaviour {
         if (spaceship.location.isEnd)
         {
             Debug.Log(scoreManager.GetScore());
-
         }
         else
         {
