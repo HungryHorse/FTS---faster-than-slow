@@ -15,6 +15,7 @@ public class Node : MonoBehaviour
     public float badChance;
     public int distance;
     public StatManager stat;
+    private static bool hasMadeGoodBad;
     [SerializeField]
     private StarMapmanager starmapManager;
 
@@ -73,8 +74,13 @@ public class Node : MonoBehaviour
             if (ship.currNode == prevNodes[i])
             {
                 GetComponent<SpriteRenderer>().color = Color.green;
-                SetGoodChance(stat.navigatorAmount);
-                SetBadChance();
+
+                if (hasMadeGoodBad)
+                {
+                    SetGoodChance(stat.navigatorAmount);
+                    SetBadChance();
+                    hasMadeGoodBad = true;
+                }
                 break;
             }
             else
@@ -129,7 +135,7 @@ public class Node : MonoBehaviour
 
     public string GetBadPercentage()
     {
-        string percentage = (int)(badChance * 100) + "%";
+        string percentage = ((int)(badChance * 100) + 1) + "%";
         return percentage;
     }
 }
