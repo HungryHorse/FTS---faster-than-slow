@@ -157,8 +157,6 @@ public class StatManager : MonoBehaviour
     {
 
         //Crew Health
-        crewHealth += Mathf.FloorToInt(medicAmount / 2);
-        crewHealth = Mathf.Clamp(crewHealth, 0, 100);
         //Crew Nutrition
         crewNutrition -= (totalCrew + passengerAmount);
         crewNutrition += (chefAmount * 10);
@@ -173,8 +171,6 @@ public class StatManager : MonoBehaviour
             crewNutrition = 0;
         }
         //Ship Health
-        shipHealth += Mathf.FloorToInt(engineerAmount / 2);
-        shipHealth = Mathf.Clamp(shipHealth, 0, 100);
         WriteStats();
         CalculateStats();
     }
