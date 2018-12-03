@@ -33,7 +33,7 @@ public class NodeToolTip : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
                 currentToolTip = Instantiate(tooltipObject, canvas.transform);
                 if (castOnLeft)
                 {
-                    currentToolTip.transform.position = new Vector3(gameObject.transform.position.x - 1f, gameObject.transform.position.y - 2f);
+                    currentToolTip.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 1.5f);
                 }
                 else
                 {
