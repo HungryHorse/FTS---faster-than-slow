@@ -5,7 +5,7 @@ SH
 They offer you some materials that can be used by your engineers to repair the ship. They appear to have quite a surplus.
 Send them a message and see if they have any staff left over who are not needed now that the job is finished.
 NA
-0.000.05
+0.000.50
 They offer some spare navigators that are no longer needed for the job.
 SH
 N
