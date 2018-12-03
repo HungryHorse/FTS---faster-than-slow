@@ -1,0 +1,11 @@
+You come across a planet that looks a lot like your home world. There are small shuttles zipping around and you can see several large cities.
+Make a stop here and see whether or not there are civilians who would like to join you
+NA
+0.000.40
+You contact one of the larger cities and they gather up some civilians eager for a cheap ticket off this planet. 
+See if there is anywhere that you might be able to hire some more members for your security force.
+NA
+0.000.20
+Some members of the local military are eager to join your cause and enthusiastically sign their names to join your crew.
+P
+S

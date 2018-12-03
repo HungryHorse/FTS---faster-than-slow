@@ -1,0 +1,11 @@
+While travelling through the Goldilocks Zone of a nearby star you come across a planet that seems almost too good to be true. It has a perfect distrubution of land to sea with lots of little islands and pure white beaches. You recieve a signal requesting a party make landfall.
+Send down a group of security in case things go south
+NA
+0.000.20
+The group who was communicating with you is welcoming and offers healing to your crew. They appear to just be enjoying your company and are not phased by the weapons your personnel carry.
+Send a group bearing gifts instead.
+NA
+0.000.20
+The group recieves your party with open arms. They don't seem threatening and offer to heal your crew members while they stay.
+CH
+CH

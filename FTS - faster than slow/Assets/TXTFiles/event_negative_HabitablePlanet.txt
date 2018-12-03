@@ -1,0 +1,10 @@
+The planet below looks idyllic and beautiful. The climate is perfect and the people seem welcoming as you get within communication range.
+The people below seem to be requesting visitors from your passengers. Send down a randomly selected group.
+P
+0.6
+As soon as your passengers reach the surface they are pampered and given all manner of wonderful things. One by one they tell you that they will not be returning to your ship.
+The people below seem to want a way to send you a care package. Send down a shuttle.
+CH
+0.5
+The gift sent up to is filled with delicious foods and drink. All of your crew dine like kings that day. The next morning, people are reporting hallucinations and horrible flu symptoms. You had been tricked.
+
