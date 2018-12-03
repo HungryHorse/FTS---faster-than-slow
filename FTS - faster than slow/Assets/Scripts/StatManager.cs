@@ -14,6 +14,8 @@ public class StatManager : MonoBehaviour
     int StartingShipHealth;
 
     public GameOver gameOver;
+    public bool newStarving = true;
+    public OptionsMenu optionsMenu;
 
     //Stat Totals
     public int crewHealth;
@@ -165,6 +167,16 @@ public class StatManager : MonoBehaviour
         //Crew Nutrition
         crewNutrition -= (totalCrew + passengerAmount);
         crewNutrition += (chefAmount * 7);
+
+        if(crewNutrition <= 0 && newStarving)
+        {
+            optionsMenu.starvingMenu.SetActive(true);
+            newStarving = false;
+        }
+        else if (crewNutrition > 0 && !newStarving)
+        {
+            newStarving = true;
+        }
 
         if (crewNutrition < 0)
         {

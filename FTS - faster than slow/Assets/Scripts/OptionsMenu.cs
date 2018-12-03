@@ -7,6 +7,9 @@ public class OptionsMenu : MonoBehaviour {
 
     public GameObject optionsMenu;
     public Slider volSlider;
+    public GameObject starvingMenu;
+    public StatManager statManager;
+    public GameObject StarMap;
 
 	// Use this for initialization
 	void Start () {
@@ -26,7 +29,18 @@ public class OptionsMenu : MonoBehaviour {
                 ShowMenu();
             }
         }
+
+        if(starvingMenu.activeInHierarchy && !StarMap.activeInHierarchy)
+        {
+            starvingMenu.SetActive(false);
+        }
+
 	}
+
+    public void HideStarvingMenu()
+    {
+        starvingMenu.SetActive(false);
+    }
 
     public void ShowMenu()
     {
