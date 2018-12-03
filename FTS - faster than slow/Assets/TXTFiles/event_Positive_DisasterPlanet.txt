@@ -1,0 +1,11 @@
+There is a planet up ahead that looks ruined by war or natural disaster. You think there might be something of note there if you were to check it out.
+Look for farms
+NA
+0.000.10
+You send a small team and discover an abandoned looking food storage facility. Upon further inspection you find that almost all the food is gone but there is a small group of people there whp know how to prepare what remains.
+Look for military facilities
+NA
+0.000.20
+You send down a small team to investigate a military grade outpost. When the team arrives they relay that they have discovered a tiny settlement of ex military members hiding in a bunker. You invite them to join the security force.
+C
+S

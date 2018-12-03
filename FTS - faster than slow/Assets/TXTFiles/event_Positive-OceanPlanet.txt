@@ -1,0 +1,10 @@
+The small blue spec in your viewport grows slowly into a large blue planet. It looks to be entirely covered in oceans. 
+Scan the surface of the water for anything interesting
+NA
+0.000.12
+Your navigators head down in small shuttles to assess a large warm dot on the surface of the plaet. It turns out to be a thriving city floating on the waves. They are pleased to have visitors and send you away with repair kits for your ship and warm smiles.
+E
+0.700.30
+Your engineers construct little undersea vehicles to assess the seabed. They turn up a large amount of very tasty seaweed the likes of which you have never seen. 
+SH
+NU

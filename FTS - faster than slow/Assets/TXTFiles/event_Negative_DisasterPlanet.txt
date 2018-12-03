@@ -1,0 +1,10 @@
+This planet looks as though it has been ravaged by war or natural disaster. It could be a waste of your time, but there could also be something good left behind...
+Send your navigators in a small escape pod to check it out. They might be able to turn something up.
+N
+0.200.10
+They make it down to the surface but the toxic atmosphere proved to be cruel and unrelenting. There are a few survivors on the surface but none that would survive for long.
+Check out the space junk orbiting the planet in case there is anything there not ruined in whatever event caused this mess.
+N
+0.3
+Your navigators set off in a small recon shuttle. They report a large mine shaped object, then nothing more.
+P

@@ -1,0 +1,10 @@
+The planet before you is covered entirely in a freshwater ocean, the waves seem to be able to reach hundreds of feet high.
+A small group of your passengers seems very interested in this planet, allow them to go and have a closer look.
+P
+0.5
+The weather darkens as your passengers board a small surface vessel. Their frequent updates on the radio are cut off as an enourmous wave crashes over their ship.
+Move your ship around to the others side of the planet in case there is a landmass there
+SH
+0.4
+As you begin to relocate the ship a small trail of smoke breaks the surface of the water. After a few moments you realise there is a missile at the top of the smoke plume and it is coming right for you.
+

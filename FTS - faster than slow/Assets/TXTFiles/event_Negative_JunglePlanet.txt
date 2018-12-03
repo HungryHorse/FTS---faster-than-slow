@@ -1,0 +1,11 @@
+The planet you see before you is lush and covered with greenery. You wonder what goes on beneath the canopies.
+See what you can discover about the animal life here
+N
+0.2
+You send a team of navigators into the jungle to see what they can find out about the fauna here. You hear muffled conversation over the comms. This quickly turns to panicked noises and finally, silence.
+See if there are any locals here
+S
+0.200.15
+You send a team of security to investigate any local populations and they are met with swift and brutal resistance. A few are persuaded to join your ship however.
+
+P
