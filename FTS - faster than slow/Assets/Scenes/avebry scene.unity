@@ -2510,6 +2510,7 @@ MonoBehaviour:
   prevNodes:
   - {fileID: 1500827803}
   - {fileID: 408521941}
+  - {fileID: 543310098}
   ship: {fileID: 1764809653}
   goodChance: 0
   badChance: 0
