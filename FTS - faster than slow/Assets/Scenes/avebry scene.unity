@@ -1670,6 +1670,7 @@ GameObject:
   - component: {fileID: 136276418}
   - component: {fileID: 136276417}
   - component: {fileID: 136276416}
+  - component: {fileID: 136276420}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1740,6 +1741,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &136276420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136276415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca98640283aab24fbf81709318a91cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: 35e9ebbb970c86c4e8f4df81109f4462, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
 --- !u!1 &186027514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2510,7 +2525,6 @@ MonoBehaviour:
   prevNodes:
   - {fileID: 1500827803}
   - {fileID: 408521941}
-  - {fileID: 543310098}
   ship: {fileID: 1764809653}
   goodChance: 0
   badChance: 0

@@ -1,11 +1,11 @@
 When you scan the leafy green planet up ahead it lights up your instruments with signs of life. Maybe some of them are friendly
 Look for towns or cities, any larger built up areas
 N
-0.800.10
+0.800.30
 Your navigators manage to track down a large stone city buried beneath the leaves and ivy. Housed here is a whole cities worth of people. A few of them have always dreamed of the stars and aggree to join you.
 Search for food or people who know how to find it
 N
-0.700.05
+0.700.20
 Your navigators find a tiny group of people who had crash landed here quite some time ago. They had no way to leave but have grown quite fond of this place and its food. They offer to join your crew and make food for your passengers.
 N
 C
